@@ -1,4 +1,5 @@
-[{
+[
+  {
     "id": "2012",
     "userId": "c01d7b",
     "timestamp": 1515481575,
@@ -53,23 +54,27 @@
     "threadId": "41375",
     "source": "8chan_qresearch",
     "link": "https://8ch.net//qresearch/res/41375.html#42981",
-    "references": [{
-      "id": "42090",
-      "userId": "504a98",
-      "timestamp": 1515901850,
-      "subject": null,
-      "name": "Anonymous",
-      "email": null,
-      "trip": null,
-      "text": "Chess fag saysssss.\nJA's chessboard is a famous game with a deadly move that was thwarted by the world champ in 1918.\nThis comes on the day of Trump's zero tweet marker.\nNext move on JA's chess board is (are you ready for this?\n\nQf3 = Queen to f3 \nQ FOX THREE\n",
-      "images": [{
-        "url": "https://media.8ch.net/file_store/c3dbf3952de6613050b5a77c865d445566e0315bb201f6b428a81f768bfe07b3.png",
-        "filename": "qfoxthree.PNG"
-      }],
-      "threadId": "41375",
-      "source": "8chan_qresearch",
-      "link": "https://8ch.net//qresearch/res/41375.html#42090"
-    }]
+    "references": [
+      {
+        "id": "42090",
+        "userId": "504a98",
+        "timestamp": 1515901850,
+        "subject": null,
+        "name": "Anonymous",
+        "email": null,
+        "trip": null,
+        "text": "Chess fag saysssss.\nJA's chessboard is a famous game with a deadly move that was thwarted by the world champ in 1918.\nThis comes on the day of Trump's zero tweet marker.\nNext move on JA's chess board is (are you ready for this?\n\nQf3 = Queen to f3 \nQ FOX THREE\n",
+        "images": [
+          {
+            "url": "https://media.8ch.net/file_store/c3dbf3952de6613050b5a77c865d445566e0315bb201f6b428a81f768bfe07b3.png",
+            "filename": "qfoxthree.PNG"
+          }
+        ],
+        "threadId": "41375",
+        "source": "8chan_qresearch",
+        "link": "https://8ch.net//qresearch/res/41375.html#42090"
+      }
+    ]
   },
   {
     "id": "43627",
@@ -84,23 +89,27 @@
     "threadId": "42982",
     "source": "8chan_qresearch",
     "link": "https://8ch.net//qresearch/res/42982.html#43627",
-    "references": [{
-      "id": "43088",
-      "userId": "2a110a",
-      "timestamp": 1515905930,
-      "subject": null,
-      "name": "Anonymous",
-      "email": null,
-      "trip": null,
-      "text": "F*k!!!\n",
-      "images": [{
-        "url": "https://media.8ch.net/file_store/cfee654a467f894fa953e0e9b310d03c19bb98a788b2822ddb4ba6ef1e879d5b.png",
-        "filename": "ClipboardImage.png"
-      }],
-      "threadId": "42982",
-      "source": "8chan_qresearch",
-      "link": "https://8ch.net//qresearch/res/42982.html#43088"
-    }]
+    "references": [
+      {
+        "id": "43088",
+        "userId": "2a110a",
+        "timestamp": 1515905930,
+        "subject": null,
+        "name": "Anonymous",
+        "email": null,
+        "trip": null,
+        "text": "F*k!!!\n",
+        "images": [
+          {
+            "url": "https://media.8ch.net/file_store/cfee654a467f894fa953e0e9b310d03c19bb98a788b2822ddb4ba6ef1e879d5b.png",
+            "filename": "ClipboardImage.png"
+          }
+        ],
+        "threadId": "42982",
+        "source": "8chan_qresearch",
+        "link": "https://8ch.net//qresearch/res/42982.html#43088"
+      }
+    ]
   },
   {
     "id": "43766",
@@ -115,20 +124,22 @@
     "threadId": "42982",
     "source": "8chan_qresearch",
     "link": "https://8ch.net//qresearch/res/42982.html#43766",
-    "references": [{
-      "id": "43719",
-      "userId": "25434a",
-      "timestamp": 1515908229,
-      "subject": null,
-      "name": "Anonymous",
-      "email": null,
-      "trip": null,
-      "text": "POTUS just retweeted story \"Hillary Clintons 33,000 emails may not be missing after all\"\n",
-      "images": [],
-      "threadId": "42982",
-      "source": "8chan_qresearch",
-      "link": "https://8ch.net//qresearch/res/42982.html#43719"
-    }]
+    "references": [
+      {
+        "id": "43719",
+        "userId": "25434a",
+        "timestamp": 1515908229,
+        "subject": null,
+        "name": "Anonymous",
+        "email": null,
+        "trip": null,
+        "text": "POTUS just retweeted story \"Hillary Clintons 33,000 emails may not be missing after all\"\n",
+        "images": [],
+        "threadId": "42982",
+        "source": "8chan_qresearch",
+        "link": "https://8ch.net//qresearch/res/42982.html#43719"
+      }
+    ]
   },
   {
     "id": "49343",
@@ -143,51 +154,59 @@
     "threadId": "48753",
     "source": "8chan_qresearch",
     "link": "https://8ch.net//qresearch/res/48753.html#49343",
-    "references": [{
-      "id": "49330",
-      "userId": "9c8009",
-      "timestamp": 1515961547,
-      "subject": null,
-      "name": "Anonymous",
-      "email": null,
-      "trip": null,
-      "text": ">>49315\njust saw story about alwaleed in prison because he won't pay 6 billion to secure freedoom\n",
-      "images": [],
-      "threadId": "48753",
-      "source": "8chan_qresearch",
-      "link": "https://8ch.net//qresearch/res/48753.html#49330",
-      "references": [{
-        "id": "49315",
-        "userId": "7e0da8",
-        "timestamp": 1515961485,
+    "references": [
+      {
+        "id": "49330",
+        "userId": "9c8009",
+        "timestamp": 1515961547,
         "subject": null,
         "name": "Anonymous",
         "email": null,
         "trip": null,
-        "text": ">>49232\nWhat I glean from this. 187 reference to Seth Rich. Killers DOA. \n\nVegas still tied up.  (Alwaleed not talking yet)\n",
+        "text": ">>49315\njust saw story about alwaleed in prison because he won't pay 6 billion to secure freedoom\n",
         "images": [],
         "threadId": "48753",
         "source": "8chan_qresearch",
-        "link": "https://8ch.net//qresearch/res/48753.html#49315",
-        "references": [{
-          "id": "49232",
-          "userId": "b1207c",
-          "timestamp": 1515961136,
-          "subject": null,
-          "name": "Anonymous",
-          "email": null,
-          "trip": null,
-          "text": "new Q\n",
-          "images": [{
-            "url": "https://media.8ch.net/file_store/83828748f9947b973be11eeb540f8f81bc2c565eacc79a4c758a26fb508670dd.png",
-            "filename": "q.png"
-          }],
-          "threadId": "48753",
-          "source": "8chan_qresearch",
-          "link": "https://8ch.net//qresearch/res/48753.html#49232"
-        }]
-      }]
-    }]
+        "link": "https://8ch.net//qresearch/res/48753.html#49330",
+        "references": [
+          {
+            "id": "49315",
+            "userId": "7e0da8",
+            "timestamp": 1515961485,
+            "subject": null,
+            "name": "Anonymous",
+            "email": null,
+            "trip": null,
+            "text": ">>49232\nWhat I glean from this. 187 reference to Seth Rich. Killers DOA. \n\nVegas still tied up.  (Alwaleed not talking yet)\n",
+            "images": [],
+            "threadId": "48753",
+            "source": "8chan_qresearch",
+            "link": "https://8ch.net//qresearch/res/48753.html#49315",
+            "references": [
+              {
+                "id": "49232",
+                "userId": "b1207c",
+                "timestamp": 1515961136,
+                "subject": null,
+                "name": "Anonymous",
+                "email": null,
+                "trip": null,
+                "text": "new Q\n",
+                "images": [
+                  {
+                    "url": "https://media.8ch.net/file_store/83828748f9947b973be11eeb540f8f81bc2c565eacc79a4c758a26fb508670dd.png",
+                    "filename": "q.png"
+                  }
+                ],
+                "threadId": "48753",
+                "source": "8chan_qresearch",
+                "link": "https://8ch.net//qresearch/res/48753.html#49232"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "89725",
@@ -216,34 +235,38 @@
     "threadId": "89466",
     "source": "8chan_qresearch",
     "link": "https://8ch.net//qresearch/res/89466.html#89777",
-    "references": [{
-      "id": "89736",
-      "userId": "4bb19b",
-      "timestamp": 1516340246,
-      "subject": null,
-      "name": "Anonymous",
-      "email": null,
-      "trip": null,
-      "text": ">>89725\nTHANK YOU Q\nFROM CANADA TOO IM SURE THIS WILL EXPOSE OUR CORRUPTION AS WELL!\n",
-      "images": [],
-      "threadId": "89466",
-      "source": "8chan_qresearch",
-      "link": "https://8ch.net//qresearch/res/89466.html#89736",
-      "references": [{
-        "id": "89725",
-        "userId": "239b20",
-        "timestamp": 1516340201,
+    "references": [
+      {
+        "id": "89736",
+        "userId": "4bb19b",
+        "timestamp": 1516340246,
         "subject": null,
-        "name": "Q",
+        "name": "Anonymous",
         "email": null,
-        "trip": "!UW.yye1fxo",
-        "text": "We are WITH YOU.\nQ\n",
+        "trip": null,
+        "text": ">>89725\nTHANK YOU Q\nFROM CANADA TOO IM SURE THIS WILL EXPOSE OUR CORRUPTION AS WELL!\n",
         "images": [],
         "threadId": "89466",
         "source": "8chan_qresearch",
-        "link": "https://8ch.net//qresearch/res/89466.html#89725"
-      }]
-    }]
+        "link": "https://8ch.net//qresearch/res/89466.html#89736",
+        "references": [
+          {
+            "id": "89725",
+            "userId": "239b20",
+            "timestamp": 1516340201,
+            "subject": null,
+            "name": "Q",
+            "email": null,
+            "trip": "!UW.yye1fxo",
+            "text": "We are WITH YOU.\nQ\n",
+            "images": [],
+            "threadId": "89466",
+            "source": "8chan_qresearch",
+            "link": "https://8ch.net//qresearch/res/89466.html#89725"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "89841",
@@ -258,62 +281,70 @@
     "threadId": "89466",
     "source": "8chan_qresearch",
     "link": "https://8ch.net//qresearch/res/89466.html#89841",
-    "references": [{
-      "id": "89812",
-      "userId": "7d494b",
-      "timestamp": 1516340449,
-      "subject": null,
-      "name": "Anonymous",
-      "email": null,
-      "trip": null,
-      "text": ">>89777\n #SethRich coming?\n",
-      "images": [],
-      "threadId": "89466",
-      "source": "8chan_qresearch",
-      "link": "https://8ch.net//qresearch/res/89466.html#89812",
-      "references": [{
-        "id": "89777",
-        "userId": "239b20",
-        "timestamp": 1516340357,
+    "references": [
+      {
+        "id": "89812",
+        "userId": "7d494b",
+        "timestamp": 1516340449,
         "subject": null,
-        "name": "Q",
+        "name": "Anonymous",
         "email": null,
-        "trip": "!UW.yye1fxo",
-        "text": ">>89736\nThe 'CURE' will spread WW.\nHave FAITH, Patriot.\nQ\n",
+        "trip": null,
+        "text": ">>89777\n #SethRich coming?\n",
         "images": [],
         "threadId": "89466",
         "source": "8chan_qresearch",
-        "link": "https://8ch.net//qresearch/res/89466.html#89777",
-        "references": [{
-          "id": "89736",
-          "userId": "4bb19b",
-          "timestamp": 1516340246,
-          "subject": null,
-          "name": "Anonymous",
-          "email": null,
-          "trip": null,
-          "text": ">>89725\nTHANK YOU Q\nFROM CANADA TOO IM SURE THIS WILL EXPOSE OUR CORRUPTION AS WELL!\n",
-          "images": [],
-          "threadId": "89466",
-          "source": "8chan_qresearch",
-          "link": "https://8ch.net//qresearch/res/89466.html#89736",
-          "references": [{
-            "id": "89725",
+        "link": "https://8ch.net//qresearch/res/89466.html#89812",
+        "references": [
+          {
+            "id": "89777",
             "userId": "239b20",
-            "timestamp": 1516340201,
+            "timestamp": 1516340357,
             "subject": null,
             "name": "Q",
             "email": null,
             "trip": "!UW.yye1fxo",
-            "text": "We are WITH YOU.\nQ\n",
+            "text": ">>89736\nThe 'CURE' will spread WW.\nHave FAITH, Patriot.\nQ\n",
             "images": [],
             "threadId": "89466",
             "source": "8chan_qresearch",
-            "link": "https://8ch.net//qresearch/res/89466.html#89725"
-          }]
-        }]
-      }]
-    }]
+            "link": "https://8ch.net//qresearch/res/89466.html#89777",
+            "references": [
+              {
+                "id": "89736",
+                "userId": "4bb19b",
+                "timestamp": 1516340246,
+                "subject": null,
+                "name": "Anonymous",
+                "email": null,
+                "trip": null,
+                "text": ">>89725\nTHANK YOU Q\nFROM CANADA TOO IM SURE THIS WILL EXPOSE OUR CORRUPTION AS WELL!\n",
+                "images": [],
+                "threadId": "89466",
+                "source": "8chan_qresearch",
+                "link": "https://8ch.net//qresearch/res/89466.html#89736",
+                "references": [
+                  {
+                    "id": "89725",
+                    "userId": "239b20",
+                    "timestamp": 1516340201,
+                    "subject": null,
+                    "name": "Q",
+                    "email": null,
+                    "trip": "!UW.yye1fxo",
+                    "text": "We are WITH YOU.\nQ\n",
+                    "images": [],
+                    "threadId": "89466",
+                    "source": "8chan_qresearch",
+                    "link": "https://8ch.net//qresearch/res/89466.html#89725"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "97639",
@@ -342,34 +373,38 @@
     "threadId": "97364",
     "source": "8chan_qresearch",
     "link": "https://8ch.net//qresearch/res/97364.html#97705",
-    "references": [{
-      "id": "97686",
-      "userId": "a27ebf",
-      "timestamp": 1516401883,
-      "subject": null,
-      "name": "Anonymous",
-      "email": null,
-      "trip": null,
-      "text": ">>97639\n\nAny insight into the Fake News Awards?  \nHard to believe POTUS would have to reschedule 10 days later just to tweet a link, unless something else was happening there.  \nWas our work here successful for what you needed from us?\n",
-      "images": [],
-      "threadId": "97364",
-      "source": "8chan_qresearch",
-      "link": "https://8ch.net//qresearch/res/97364.html#97686",
-      "references": [{
-        "id": "97639",
-        "userId": "ee2415",
-        "timestamp": 1516401776,
+    "references": [
+      {
+        "id": "97686",
+        "userId": "a27ebf",
+        "timestamp": 1516401883,
         "subject": null,
-        "name": "Q",
+        "name": "Anonymous",
         "email": null,
-        "trip": "!UW.yye1fxo",
-        "text": "Need a few red pills for family, friends, and others?\nRead the #Memo.\nRelease coming.\nFinal clearance underway.\nMake sure to learn Russian.\nQ\n",
+        "trip": null,
+        "text": ">>97639\n\nAny insight into the Fake News Awards?  \nHard to believe POTUS would have to reschedule 10 days later just to tweet a link, unless something else was happening there.  \nWas our work here successful for what you needed from us?\n",
         "images": [],
         "threadId": "97364",
         "source": "8chan_qresearch",
-        "link": "https://8ch.net//qresearch/res/97364.html#97639"
-      }]
-    }]
+        "link": "https://8ch.net//qresearch/res/97364.html#97686",
+        "references": [
+          {
+            "id": "97639",
+            "userId": "ee2415",
+            "timestamp": 1516401776,
+            "subject": null,
+            "name": "Q",
+            "email": null,
+            "trip": "!UW.yye1fxo",
+            "text": "Need a few red pills for family, friends, and others?\nRead the #Memo.\nRelease coming.\nFinal clearance underway.\nMake sure to learn Russian.\nQ\n",
+            "images": [],
+            "threadId": "97364",
+            "source": "8chan_qresearch",
+            "link": "https://8ch.net//qresearch/res/97364.html#97639"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "97753",
@@ -384,62 +419,70 @@
     "threadId": "97364",
     "source": "8chan_qresearch",
     "link": "https://8ch.net//qresearch/res/97364.html#97753",
-    "references": [{
-      "id": "97724",
-      "userId": "9b8d2a",
-      "timestamp": 1516402019,
-      "subject": null,
-      "name": "Anonymous",
-      "email": null,
-      "trip": null,
-      "text": ">>97705\nwas that our \"wargames\" i.e. get us meme troops in a live-fire drill?\n",
-      "images": [],
-      "threadId": "97364",
-      "source": "8chan_qresearch",
-      "link": "https://8ch.net//qresearch/res/97364.html#97724",
-      "references": [{
-        "id": "97705",
-        "userId": "ee2415",
-        "timestamp": 1516401962,
+    "references": [
+      {
+        "id": "97724",
+        "userId": "9b8d2a",
+        "timestamp": 1516402019,
         "subject": null,
-        "name": "Q",
+        "name": "Anonymous",
         "email": null,
-        "trip": "!UW.yye1fxo",
-        "text": ">>97686\nCombat tactics.\nQ\n",
+        "trip": null,
+        "text": ">>97705\nwas that our \"wargames\" i.e. get us meme troops in a live-fire drill?\n",
         "images": [],
         "threadId": "97364",
         "source": "8chan_qresearch",
-        "link": "https://8ch.net//qresearch/res/97364.html#97705",
-        "references": [{
-          "id": "97686",
-          "userId": "a27ebf",
-          "timestamp": 1516401883,
-          "subject": null,
-          "name": "Anonymous",
-          "email": null,
-          "trip": null,
-          "text": ">>97639\n\nAny insight into the Fake News Awards?  \nHard to believe POTUS would have to reschedule 10 days later just to tweet a link, unless something else was happening there.  \nWas our work here successful for what you needed from us?\n",
-          "images": [],
-          "threadId": "97364",
-          "source": "8chan_qresearch",
-          "link": "https://8ch.net//qresearch/res/97364.html#97686",
-          "references": [{
-            "id": "97639",
+        "link": "https://8ch.net//qresearch/res/97364.html#97724",
+        "references": [
+          {
+            "id": "97705",
             "userId": "ee2415",
-            "timestamp": 1516401776,
+            "timestamp": 1516401962,
             "subject": null,
             "name": "Q",
             "email": null,
             "trip": "!UW.yye1fxo",
-            "text": "Need a few red pills for family, friends, and others?\nRead the #Memo.\nRelease coming.\nFinal clearance underway.\nMake sure to learn Russian.\nQ\n",
+            "text": ">>97686\nCombat tactics.\nQ\n",
             "images": [],
             "threadId": "97364",
             "source": "8chan_qresearch",
-            "link": "https://8ch.net//qresearch/res/97364.html#97639"
-          }]
-        }]
-      }]
-    }]
+            "link": "https://8ch.net//qresearch/res/97364.html#97705",
+            "references": [
+              {
+                "id": "97686",
+                "userId": "a27ebf",
+                "timestamp": 1516401883,
+                "subject": null,
+                "name": "Anonymous",
+                "email": null,
+                "trip": null,
+                "text": ">>97639\n\nAny insight into the Fake News Awards?  \nHard to believe POTUS would have to reschedule 10 days later just to tweet a link, unless something else was happening there.  \nWas our work here successful for what you needed from us?\n",
+                "images": [],
+                "threadId": "97364",
+                "source": "8chan_qresearch",
+                "link": "https://8ch.net//qresearch/res/97364.html#97686",
+                "references": [
+                  {
+                    "id": "97639",
+                    "userId": "ee2415",
+                    "timestamp": 1516401776,
+                    "subject": null,
+                    "name": "Q",
+                    "email": null,
+                    "trip": "!UW.yye1fxo",
+                    "text": "Need a few red pills for family, friends, and others?\nRead the #Memo.\nRelease coming.\nFinal clearance underway.\nMake sure to learn Russian.\nQ\n",
+                    "images": [],
+                    "threadId": "97364",
+                    "source": "8chan_qresearch",
+                    "link": "https://8ch.net//qresearch/res/97364.html#97639"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "97777",
@@ -454,23 +497,27 @@
     "threadId": "97364",
     "source": "8chan_qresearch",
     "link": "https://8ch.net//qresearch/res/97364.html#97777",
-    "references": [{
-      "id": "97752",
-      "userId": "6ac131",
-      "timestamp": 1516402157,
-      "subject": null,
-      "name": "Anonymous",
-      "email": null,
-      "trip": null,
-      "text": "\n",
-      "images": [{
-        "url": "https://media.8ch.net/file_store/a2e3d1f2974ffd753ede1a4ee9603d5152c4fc9ad96a33bdbba090a75c5ed48a.jpeg",
-        "filename": "137F7BD8-BF28-40B0-ACDE-B….jpeg"
-      }],
-      "threadId": "97364",
-      "source": "8chan_qresearch",
-      "link": "https://8ch.net//qresearch/res/97364.html#97752"
-    }]
+    "references": [
+      {
+        "id": "97752",
+        "userId": "6ac131",
+        "timestamp": 1516402157,
+        "subject": null,
+        "name": "Anonymous",
+        "email": null,
+        "trip": null,
+        "text": "\n",
+        "images": [
+          {
+            "url": "https://media.8ch.net/file_store/a2e3d1f2974ffd753ede1a4ee9603d5152c4fc9ad96a33bdbba090a75c5ed48a.jpeg",
+            "filename": "137F7BD8-BF28-40B0-ACDE-B….jpeg"
+          }
+        ],
+        "threadId": "97364",
+        "source": "8chan_qresearch",
+        "link": "https://8ch.net//qresearch/res/97364.html#97752"
+      }
+    ]
   },
   {
     "id": "119769",
@@ -485,20 +532,22 @@
     "threadId": "119439",
     "source": "8chan_qresearch",
     "link": "https://8ch.net//qresearch/res/119439.html#119769",
-    "references": [{
-      "id": "119569",
-      "userId": "282f8c",
-      "timestamp": 1516585797,
-      "subject": null,
-      "name": "Anonymous",
-      "email": null,
-      "trip": null,
-      "text": "Look guys, its pretty damn obvious..\n\nIts a deleted E-mail. Thus why Q deleted it. Get the message.\n\nFind out who posted it first and if they posted anything else.\n",
-      "images": [],
-      "threadId": "119439",
-      "source": "8chan_qresearch",
-      "link": "https://8ch.net//qresearch/res/119439.html#119569"
-    }]
+    "references": [
+      {
+        "id": "119569",
+        "userId": "282f8c",
+        "timestamp": 1516585797,
+        "subject": null,
+        "name": "Anonymous",
+        "email": null,
+        "trip": null,
+        "text": "Look guys, its pretty damn obvious..\n\nIts a deleted E-mail. Thus why Q deleted it. Get the message.\n\nFind out who posted it first and if they posted anything else.\n",
+        "images": [],
+        "threadId": "119439",
+        "source": "8chan_qresearch",
+        "link": "https://8ch.net//qresearch/res/119439.html#119569"
+      }
+    ]
   },
   {
     "id": "119877",
@@ -513,34 +562,38 @@
     "threadId": "119439",
     "source": "8chan_qresearch",
     "link": "https://8ch.net//qresearch/res/119439.html#119877",
-    "references": [{
-      "id": "119769",
-      "userId": "7f44ec",
-      "timestamp": 1516586755,
-      "subject": null,
-      "name": "Q",
-      "email": null,
-      "trip": "!UW.yye1fxo",
-      "text": ">>119569\nNot from WL.\n[CLAS-N-DI_9] gg_dump [No Such Agency].\nIt does not technically exist as open-source.\nQ\n",
-      "images": [],
-      "threadId": "119439",
-      "source": "8chan_qresearch",
-      "link": "https://8ch.net//qresearch/res/119439.html#119769",
-      "references": [{
-        "id": "119569",
-        "userId": "282f8c",
-        "timestamp": 1516585797,
+    "references": [
+      {
+        "id": "119769",
+        "userId": "7f44ec",
+        "timestamp": 1516586755,
         "subject": null,
-        "name": "Anonymous",
+        "name": "Q",
         "email": null,
-        "trip": null,
-        "text": "Look guys, its pretty damn obvious..\n\nIts a deleted E-mail. Thus why Q deleted it. Get the message.\n\nFind out who posted it first and if they posted anything else.\n",
+        "trip": "!UW.yye1fxo",
+        "text": ">>119569\nNot from WL.\n[CLAS-N-DI_9] gg_dump [No Such Agency].\nIt does not technically exist as open-source.\nQ\n",
         "images": [],
         "threadId": "119439",
         "source": "8chan_qresearch",
-        "link": "https://8ch.net//qresearch/res/119439.html#119569"
-      }]
-    }]
+        "link": "https://8ch.net//qresearch/res/119439.html#119769",
+        "references": [
+          {
+            "id": "119569",
+            "userId": "282f8c",
+            "timestamp": 1516585797,
+            "subject": null,
+            "name": "Anonymous",
+            "email": null,
+            "trip": null,
+            "text": "Look guys, its pretty damn obvious..\n\nIts a deleted E-mail. Thus why Q deleted it. Get the message.\n\nFind out who posted it first and if they posted anything else.\n",
+            "images": [],
+            "threadId": "119439",
+            "source": "8chan_qresearch",
+            "link": "https://8ch.net//qresearch/res/119439.html#119569"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "120050",
@@ -555,48 +608,54 @@
     "threadId": "119439",
     "source": "8chan_qresearch",
     "link": "https://8ch.net//qresearch/res/119439.html#120050",
-    "references": [{
-      "id": "119877",
-      "userId": "7f44ec",
-      "timestamp": 1516587139,
-      "subject": null,
-      "name": "Q",
-      "email": null,
-      "trip": "!UW.yye1fxo",
-      "text": ">>119769\nThe flood is coming.\nEmails, videos, audio, pics, etc.\nFBI accidentally deletes texts?\nNo Such Agency accidentally releases IT ALL&gt;\nShall we play a game?\nQ\n",
-      "images": [],
-      "threadId": "119439",
-      "source": "8chan_qresearch",
-      "link": "https://8ch.net//qresearch/res/119439.html#119877",
-      "references": [{
-        "id": "119769",
+    "references": [
+      {
+        "id": "119877",
         "userId": "7f44ec",
-        "timestamp": 1516586755,
+        "timestamp": 1516587139,
         "subject": null,
         "name": "Q",
         "email": null,
         "trip": "!UW.yye1fxo",
-        "text": ">>119569\nNot from WL.\n[CLAS-N-DI_9] gg_dump [No Such Agency].\nIt does not technically exist as open-source.\nQ\n",
+        "text": ">>119769\nThe flood is coming.\nEmails, videos, audio, pics, etc.\nFBI accidentally deletes texts?\nNo Such Agency accidentally releases IT ALL&gt;\nShall we play a game?\nQ\n",
         "images": [],
         "threadId": "119439",
         "source": "8chan_qresearch",
-        "link": "https://8ch.net//qresearch/res/119439.html#119769",
-        "references": [{
-          "id": "119569",
-          "userId": "282f8c",
-          "timestamp": 1516585797,
-          "subject": null,
-          "name": "Anonymous",
-          "email": null,
-          "trip": null,
-          "text": "Look guys, its pretty damn obvious..\n\nIts a deleted E-mail. Thus why Q deleted it. Get the message.\n\nFind out who posted it first and if they posted anything else.\n",
-          "images": [],
-          "threadId": "119439",
-          "source": "8chan_qresearch",
-          "link": "https://8ch.net//qresearch/res/119439.html#119569"
-        }]
-      }]
-    }]
+        "link": "https://8ch.net//qresearch/res/119439.html#119877",
+        "references": [
+          {
+            "id": "119769",
+            "userId": "7f44ec",
+            "timestamp": 1516586755,
+            "subject": null,
+            "name": "Q",
+            "email": null,
+            "trip": "!UW.yye1fxo",
+            "text": ">>119569\nNot from WL.\n[CLAS-N-DI_9] gg_dump [No Such Agency].\nIt does not technically exist as open-source.\nQ\n",
+            "images": [],
+            "threadId": "119439",
+            "source": "8chan_qresearch",
+            "link": "https://8ch.net//qresearch/res/119439.html#119769",
+            "references": [
+              {
+                "id": "119569",
+                "userId": "282f8c",
+                "timestamp": 1516585797,
+                "subject": null,
+                "name": "Anonymous",
+                "email": null,
+                "trip": null,
+                "text": "Look guys, its pretty damn obvious..\n\nIts a deleted E-mail. Thus why Q deleted it. Get the message.\n\nFind out who posted it first and if they posted anything else.\n",
+                "images": [],
+                "threadId": "119439",
+                "source": "8chan_qresearch",
+                "link": "https://8ch.net//qresearch/res/119439.html#119569"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "120138",
@@ -611,48 +670,54 @@
     "threadId": "119439",
     "source": "8chan_qresearch",
     "link": "https://8ch.net//qresearch/res/119439.html#120138",
-    "references": [{
-      "id": "119877",
-      "userId": "7f44ec",
-      "timestamp": 1516587139,
-      "subject": null,
-      "name": "Q",
-      "email": null,
-      "trip": "!UW.yye1fxo",
-      "text": ">>119769\nThe flood is coming.\nEmails, videos, audio, pics, etc.\nFBI accidentally deletes texts?\nNo Such Agency accidentally releases IT ALL&gt;\nShall we play a game?\nQ\n",
-      "images": [],
-      "threadId": "119439",
-      "source": "8chan_qresearch",
-      "link": "https://8ch.net//qresearch/res/119439.html#119877",
-      "references": [{
-        "id": "119769",
+    "references": [
+      {
+        "id": "119877",
         "userId": "7f44ec",
-        "timestamp": 1516586755,
+        "timestamp": 1516587139,
         "subject": null,
         "name": "Q",
         "email": null,
         "trip": "!UW.yye1fxo",
-        "text": ">>119569\nNot from WL.\n[CLAS-N-DI_9] gg_dump [No Such Agency].\nIt does not technically exist as open-source.\nQ\n",
+        "text": ">>119769\nThe flood is coming.\nEmails, videos, audio, pics, etc.\nFBI accidentally deletes texts?\nNo Such Agency accidentally releases IT ALL&gt;\nShall we play a game?\nQ\n",
         "images": [],
         "threadId": "119439",
         "source": "8chan_qresearch",
-        "link": "https://8ch.net//qresearch/res/119439.html#119769",
-        "references": [{
-          "id": "119569",
-          "userId": "282f8c",
-          "timestamp": 1516585797,
-          "subject": null,
-          "name": "Anonymous",
-          "email": null,
-          "trip": null,
-          "text": "Look guys, its pretty damn obvious..\n\nIts a deleted E-mail. Thus why Q deleted it. Get the message.\n\nFind out who posted it first and if they posted anything else.\n",
-          "images": [],
-          "threadId": "119439",
-          "source": "8chan_qresearch",
-          "link": "https://8ch.net//qresearch/res/119439.html#119569"
-        }]
-      }]
-    }]
+        "link": "https://8ch.net//qresearch/res/119439.html#119877",
+        "references": [
+          {
+            "id": "119769",
+            "userId": "7f44ec",
+            "timestamp": 1516586755,
+            "subject": null,
+            "name": "Q",
+            "email": null,
+            "trip": "!UW.yye1fxo",
+            "text": ">>119569\nNot from WL.\n[CLAS-N-DI_9] gg_dump [No Such Agency].\nIt does not technically exist as open-source.\nQ\n",
+            "images": [],
+            "threadId": "119439",
+            "source": "8chan_qresearch",
+            "link": "https://8ch.net//qresearch/res/119439.html#119769",
+            "references": [
+              {
+                "id": "119569",
+                "userId": "282f8c",
+                "timestamp": 1516585797,
+                "subject": null,
+                "name": "Anonymous",
+                "email": null,
+                "trip": null,
+                "text": "Look guys, its pretty damn obvious..\n\nIts a deleted E-mail. Thus why Q deleted it. Get the message.\n\nFind out who posted it first and if they posted anything else.\n",
+                "images": [],
+                "threadId": "119439",
+                "source": "8chan_qresearch",
+                "link": "https://8ch.net//qresearch/res/119439.html#119569"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "120361",
@@ -667,23 +732,27 @@
     "threadId": "119439",
     "source": "8chan_qresearch",
     "link": "https://8ch.net//qresearch/res/119439.html#120361",
-    "references": [{
-      "id": "120326",
-      "userId": "281cab",
-      "timestamp": 1516588731,
-      "subject": null,
-      "name": "Anonymous",
-      "email": null,
-      "trip": null,
-      "text": "shills working overtime… this email was confirmed between Q posting time and 4,10,20 posting time at 51 minutes and it being the 51st post\n",
-      "images": [{
-        "url": "https://media.8ch.net/file_store/12be822f398904a6981d207b31854dbde63481d35a84703030debfbdb2ed3ca8.jpg",
-        "filename": "proof.jpg"
-      }],
-      "threadId": "119439",
-      "source": "8chan_qresearch",
-      "link": "https://8ch.net//qresearch/res/119439.html#120326"
-    }]
+    "references": [
+      {
+        "id": "120326",
+        "userId": "281cab",
+        "timestamp": 1516588731,
+        "subject": null,
+        "name": "Anonymous",
+        "email": null,
+        "trip": null,
+        "text": "shills working overtime… this email was confirmed between Q posting time and 4,10,20 posting time at 51 minutes and it being the 51st post\n",
+        "images": [
+          {
+            "url": "https://media.8ch.net/file_store/12be822f398904a6981d207b31854dbde63481d35a84703030debfbdb2ed3ca8.jpg",
+            "filename": "proof.jpg"
+          }
+        ],
+        "threadId": "119439",
+        "source": "8chan_qresearch",
+        "link": "https://8ch.net//qresearch/res/119439.html#120326"
+      }
+    ]
   },
   {
     "id": "120998",
@@ -698,20 +767,22 @@
     "threadId": "120301",
     "source": "8chan_qresearch",
     "link": "https://8ch.net//qresearch/res/120301.html#120998",
-    "references": [{
-      "id": "120926",
-      "userId": "c4d817",
-      "timestamp": 1516591215,
-      "subject": null,
-      "name": "Anonymous",
-      "email": null,
-      "trip": null,
-      "text": "GUYS- email was sent out by NSA before election with some plausible deniability attached to it so people could say \"FAKE\"! HOWEVER, the main audience wasn't normies, it was the black hats, a shot across the bow to say \"WE HAVE IT ALL, YOUR'E RIGGING WON'T WORK\". Q just brought it back up to speak directly to \"THEM\" again to show they are going to dump it all.\n",
-      "images": [],
-      "threadId": "120301",
-      "source": "8chan_qresearch",
-      "link": "https://8ch.net//qresearch/res/120301.html#120926"
-    }]
+    "references": [
+      {
+        "id": "120926",
+        "userId": "c4d817",
+        "timestamp": 1516591215,
+        "subject": null,
+        "name": "Anonymous",
+        "email": null,
+        "trip": null,
+        "text": "GUYS- email was sent out by NSA before election with some plausible deniability attached to it so people could say \"FAKE\"! HOWEVER, the main audience wasn't normies, it was the black hats, a shot across the bow to say \"WE HAVE IT ALL, YOUR'E RIGGING WON'T WORK\". Q just brought it back up to speak directly to \"THEM\" again to show they are going to dump it all.\n",
+        "images": [],
+        "threadId": "120301",
+        "source": "8chan_qresearch",
+        "link": "https://8ch.net//qresearch/res/120301.html#120926"
+      }
+    ]
   },
   {
     "id": "121147",
@@ -726,5 +797,77 @@
     "threadId": "120301",
     "source": "8chan_qresearch",
     "link": "https://8ch.net//qresearch/res/120301.html#121147"
+  },
+  {
+    "id": "127154",
+    "userId": "f2d4bd",
+    "timestamp": 1516647949,
+    "subject": null,
+    "name": "Q",
+    "email": null,
+    "trip": "!UW.yye1fxo",
+    "text": ":stay at home&lt;\n[-7]\nDR_noon_clear_sky^\nSafe comms_SAT-re_Bz985300^00\nQ\n",
+    "images": [],
+    "threadId": "126828",
+    "source": "8chan_qresearch",
+    "link": "https://8ch.net//qresearch/res/126828.html#127154"
+  },
+  {
+    "id": "127218",
+    "userId": "f2d4bd",
+    "timestamp": 1516648384,
+    "subject": null,
+    "name": "Q",
+    "email": null,
+    "trip": "!UW.yye1fxo",
+    "text": "Private exchange [last].\nQ\n",
+    "images": [],
+    "threadId": "126828",
+    "source": "8chan_qresearch",
+    "link": "https://8ch.net//qresearch/res/126828.html#127218"
+  },
+  {
+    "id": "127256",
+    "userId": "f2d4bd",
+    "timestamp": 1516648568,
+    "subject": null,
+    "name": "Q",
+    "email": null,
+    "trip": "!UW.yye1fxo",
+    "text": ">>127246\nThank you for visiting the WH.\nFEAR.\nQ\n",
+    "images": [],
+    "threadId": "126828",
+    "source": "8chan_qresearch",
+    "link": "https://8ch.net//qresearch/res/126828.html#127256",
+    "references": [
+      {
+        "id": "127246",
+        "userId": "47a6de",
+        "timestamp": 1516648498,
+        "subject": null,
+        "name": "Anonymous",
+        "email": null,
+        "trip": null,
+        "text": "This entire shutdown exercise was Schumers attempt to put Trump in his place. He failed spectacularly.\n",
+        "images": [],
+        "threadId": "126828",
+        "source": "8chan_qresearch",
+        "link": "https://8ch.net//qresearch/res/126828.html#127246"
+      }
+    ]
+  },
+  {
+    "id": "127302",
+    "userId": "f2d4bd",
+    "timestamp": 1516648836,
+    "subject": null,
+    "name": "Q",
+    "email": null,
+    "trip": "!UW.yye1fxo",
+    "text": "TRUST Adm R.\nHe played the game to remain in control.\nQ\n",
+    "images": [],
+    "threadId": "126828",
+    "source": "8chan_qresearch",
+    "link": "https://8ch.net//qresearch/res/126828.html#127302"
   }
 ]
