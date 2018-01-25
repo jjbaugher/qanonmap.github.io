@@ -3,6 +3,8 @@ let editor;
 let answers = {};
 let editedAnswers = {};
 let postOrder = [];
+// !UW.yye1fxo has not been compromised at this time
+let qTrip = '!UW.yye1fxo';
 
 function main() {
     editor = new SimpleMDE({
@@ -52,9 +54,11 @@ function initNews() {
     getLocalJson('news').then(value => {
         const container = document.querySelector('article');
         const post = container.item;
-        const listElement = tag('div', {'class': 'links'});
+        const listElement = tag('div', {
+            'class': 'links'
+        });
         const items = [];
-        for(const item of items) {
+        for (const item of items) {
             const element = tag.fromString(html.news(item));
             listElement.appendChild(element);
             element.item = item;
@@ -68,11 +72,11 @@ function initSearch() {
     searchElement.oninput = () => {
         const value = searchElement.value;
 
-        const keywordInText = value === value.toLowerCase()
-            ? text => text
-                .toLowerCase()
-                .includes(value)
-            : text => text.includes(value);
+        const keywordInText = value === value.toLowerCase() ?
+            text => text
+            .toLowerCase()
+            .includes(value) :
+            text => text.includes(value);
 
         const ids = posts
             .filter(p => p.text && keywordInText(p.text))
@@ -82,7 +86,9 @@ function initSearch() {
         if (value == '')
             setParams({});
         else
-            setParams({q: value});
+            setParams({
+                q: value
+            });
     };
 
     const postLines = posts
@@ -107,7 +113,10 @@ function initSearch() {
     }
     const resultList = Object
         .keys(result)
-        .map(k => ({line: k, ids: result[k]}))
+        .map(k => ({
+            line: k,
+            ids: result[k]
+        }))
         .filter(a => a.ids.size > 2);
 
     resultList.sort((a, b) => b.ids.size - a.ids.size);
@@ -133,10 +142,14 @@ function applyFilter(ids) {
             element.hidden = true;
         }
     }
-    document.querySelector('#count').textContent = `${count}`;
+    document
+        .querySelector('#count')
+        .textContent = `${count}`;
     for (const h3 of Array.from(document.querySelectorAll('main .sticky'))) {
         const section = h3.nextElementSibling;
-        h3.hidden = Array.from(section.children).every(c => c.hidden);
+        h3.hidden = Array
+            .from(section.children)
+            .every(c => c.hidden);
     }
 }
 
@@ -200,7 +213,7 @@ const html = {
           ${forAll(post.references, x => `
           <blockquote id="post${post.id}">${html.post(x)}</blockquote>`)}
           ${html.post(post)}
-          <button class="">V</button>
+          <!--<button class="">📰</button>-->
         </article>`;
     },
     date: (date) => {
@@ -237,7 +250,9 @@ const html = {
             <span class="edited" title="${edate.toISOString()}">Last edited at ${formatDate(edate)}, ${formatTime(edate)}</span>`)}
         </header>
 
-        ${forAll(post.images, (i) => post.isNew ? html.img(i) : html.img(withLocalUrl(i)))}
+        ${forAll(post.images, (i) => post.isNew
+            ? html.img(i)
+            : html.img(withLocalUrl(i)))}
 
         <div class="text">${addHighlights(post.text)}</div>`;
     },
@@ -263,17 +278,21 @@ const html = {
         </div>`;
     },
     thumbnail: (src) => {
-        if (!src) return '';
+        if (!src)
+            return '';
         return `<img src="${src}" class="contain" width="100" height="100">`;
-    },
+    }
 };
-const answerButtonClass = (postId) => editedAnswers[postId]
-    ? 'edited'
-    : answers[postId] && answers[postId].length
-        ? ''
-        : 'empty';
+const answerButtonClass = (postId) => editedAnswers[postId] ?
+    'edited' :
+    answers[postId] && answers[postId].length ?
+    '' :
+    'empty';
 
-const withLocalUrl = (image) => ({filename: image.filename, url: localImgSrc(image.url)});
+const withLocalUrl = (image) => ({
+    filename: image.filename,
+    url: localImgSrc(image.url)
+});
 
 const localImgSrc = src => 'data/images/' + src
     .split('/')
@@ -281,14 +300,11 @@ const localImgSrc = src => 'data/images/' + src
 
 const legendPattern = new RegExp(`([^a-zA-Z])(${Object.keys(legend).join('|')})([^a-zA-Z])`, 'g');
 
-const addHighlights = text => !text
-    ? ''
-    : text.replace(/(^>[^>].*\n?)+/g, (match) => `<q>${match}</q>`)
-        .replace(/(https?:\/\/[.\w\/?\-=&#]+)/g, (match) => match.endsWith('.jpg')
-            ? `<img src="${match}" alt="image">`
-            : `<a href="${match}" target="_blank">${match}</a>`)
-        .replace(/(\[[^[]+])/g, (match) => `<strong>${match}</strong>`)
-        .replace(legendPattern, (match, p1, p2, p3, o, s) => `${p1}<abbr title="${legend[p2]}">${p2}</abbr>${p3}`);
+const addHighlights = text => !text ?
+    '' :
+    text.replace(/(^>[^>].*\n?)+/g, (match) => `<q>${match}</q>`).replace(/(https?:\/\/[.\w\/?\-=&#]+)/g, (match) => match.endsWith('.jpg') ?
+        `<img src="${match}" alt="image">` :
+        `<a href="${match}" target="_blank">${match}</a>`).replace(/(\[[^[]+])/g, (match) => `<strong>${match}</strong>`).replace(legendPattern, (match, p1, p2, p3, o, s) => `${p1}<abbr title="${legend[p2]}">${p2}</abbr>${p3}`);
 
 // PARSE 8chan
 
@@ -298,24 +314,34 @@ function checkForNewPosts() {
 
     for (const board of boards) {
 
-        const alreadyParsedIds =
-            Array.from(new Set(posts.filter(p => !p.isNew && p.source == `8chan_${board}`)))
-                .map(p => parseInt(p.threadId));
+        const alreadyParsedIds = Array
+            .from(new Set(posts.filter(p => !p.isNew && p.source == `8chan_${board}`)))
+            .map(p => parseInt(p.threadId));
 
+        const alreadyParsedPosts = Array
+            .from(new Set(posts.filter(p => !p.isNew && p.id && p.source == `8chan_${board}`)))
+            .map(p => parseInt(p.id));
 
         const catalogUrl = `https://8ch.net/${board}/catalog.json`;
 
         getJson(catalogUrl).then(response => {
 
             const threads = response.reduce((p, e) => p.concat(e.threads), []);
-            const threadIds = threads
-                .map((p) => p.no);
+            const threadIds = threads.map((p) => p.no);
 
-            const newThreadIds = threadIds.filter((id) => !alreadyParsedIds.includes(id));
-            console.log(newThreadIds);
+            var newThreadIds = []
+            if (threadIds.length == 1) {
+                console.log(threadIds);
+                newThreadIds = threadIds;
+            } else {
+                newThreadIds = threadIds.filter((id) => !alreadyParsedIds.includes(id));
+            }
+            console.log(`[${board}] Already parsed threads: ${alreadyParsedIds}`);
+            console.log(`[${board}] Already parsed posts: ${alreadyParsedPosts}`);
+            console.log(`[${board}] New threads: ${newThreadIds}`);
 
             Promise
-                .all(newThreadIds.map(id => getLivePostsByThread(id, board)))
+                .all(newThreadIds.map(thread => getLiveTripPostsByThread(qTrip, alreadyParsedPosts, thread, board)))
                 .then(result => {
                     const newPosts = result.reduce((p, e) => p.concat(e), []);
                     notify(`found ${newPosts.length} new posts on ${board}`);
@@ -331,31 +357,31 @@ function checkForNewPosts() {
 
 }
 
-function getLivePostsByThread(id, board) {
-
-    const threadUrl = (id) => `https://8ch.net/${board}/res/${id}.json`;
+function getLiveTripPostsByThread(trip, preparsed, thread, board) {
+    const threadUrl = (thread) => `https://8ch.net/${board}/res/${thread}.json`;
     const referencePattern = />>(\d+)/g;
-
-    return getJson(threadUrl(id)).then(result => {
-        if (!result.posts.some((p) => p.trip === '!UW.yye1fxo')) {
+    return getJson(threadUrl(thread)).then(result => {
+        if (!result.posts.some((p) => p.trip === qTrip && !preparsed.includes(p.no))) {
             return [];
         }
-        const threadPosts = result
+        const newThreadPosts = result
             .posts
-            .map(p => parseLive8chanPost(p, board));
+            .filter((x) => !preparsed.includes(x));
+        console.log(newThreadPosts);
+        console.log(`[${board}] New posts in thread: ${newThreadPosts}`);
+        const parsePosts = newThreadPosts.map(p => parseLive8chanPost(p, board));
 
-        // !UW.yye1fxo has not been compromised at this time
-        const newPosts = threadPosts.filter((p) => p.trip === '!UW.yye1fxo');
+        const newPosts = parsePosts.filter((p) => p.trip === qTrip);
 
         for (const newPost of newPosts) {
             referencePattern.lastIndex = 0;
             if (referencePattern.test(newPost.text)) {
                 referencePattern.lastIndex = 0;
                 const referenceId = referencePattern.exec(newPost.text)[1];
-                newPost.references = threadPosts.filter((p) => p.id == referenceId);
+                newPost.references = parsePosts.filter((p) => p.id == referenceId);
             }
         }
-        console.log(`added ${newPosts.length} posts from thread ${id}`);
+        console.log(`[${board}] Added ${newPosts.length} posts from thread ${thread}`);
         return newPosts;
     });
 }
@@ -366,10 +392,12 @@ function parseLive8chanPost(post, board) {
         filename: chanPost.filename
     }].concat(chanPost.extra_files);
     return {
-        images: post.tim
-            ? getImages(post)
-            : [],
-        id: post.no.toString(),
+        images: post.tim ?
+            getImages(post) :
+            [],
+        id: post
+            .no
+            .toString(),
         userId: post.id,
         timestamp: post.time,
         title: post.title,
@@ -380,7 +408,9 @@ function parseLive8chanPost(post, board) {
         subject: post.sub,
         source: '8chan_' + board,
         link: `https://8ch.net/${board}/res/${post.resto}.html#${post.no}`,
-        threadId: post.resto.toString(),
+        threadId: post
+            .resto
+            .toString(),
         isNew: true
     };
 }
@@ -485,9 +515,9 @@ function selectAnswers(selectedPostId) {
             .querySelector('aside h1')
             .innerHTML = `Answers for <a href="#post${selectedPostId}">${selectedPostId}</a>`;
 
-        const answer = editedAnswers[selectedPostId] !== undefined
-            ? editedAnswers[selectedPostId]
-            : answers[selectedPostId] || '';
+        const answer = editedAnswers[selectedPostId] !== undefined ?
+            editedAnswers[selectedPostId] :
+            answers[selectedPostId] || '';
         editor.value(answer);
         // refresh hack
         if (editor.isPreviewActive()) {
@@ -515,9 +545,9 @@ function setPreview(editor) {
     const wrapper = editor
         .codemirror
         .getWrapperElement();
-    const toolbar = editor.options.toolbar
-        ? editor.toolbarElements.preview
-        : null;
+    const toolbar = editor.options.toolbar ?
+        editor.toolbarElements.preview :
+        null;
     const preview = wrapper.lastChild;
 
     preview
