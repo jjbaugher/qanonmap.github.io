@@ -207,6 +207,7 @@ const html = {
           ${forAll(post.references, x => `
           <blockquote id="post${post.id}">${html.post(x)}</blockquote>`)}
           ${html.post(post)}
+          <!--<button onclick="" class="twitter">🐦</button>-->
           <!--<button class="">📰</button>-->
         </article>`;
     },
