@@ -54,9 +54,7 @@ function initNews() {
     getLocalJson('news').then(value => {
         const container = document.querySelector('article');
         const post = container.item;
-        const listElement = tag('div', {
-            'class': 'links'
-        });
+        const listElement = tag('div', {'class': 'links'});
         const items = [];
         for (const item of items) {
             const element = tag.fromString(html.news(item));
@@ -72,24 +70,23 @@ function initSearch() {
     searchElement.oninput = () => {
         const value = searchElement.value;
 
-        const keywordInText = value === value.toLowerCase() ?
-            text => text
-            .toLowerCase()
-            .includes(value) :
-            text => text.includes(value);
+        const keywordInText = value === value.toLowerCase()
+            ? text => text
+                .toLowerCase()
+                .includes(value)
+            : text => text.includes(value);
 
         const ids = posts
             .filter(p => p.text && keywordInText(p.text))
             .map(p => p.id);
 
         applyFilter(ids);
-        if (value == '')
+        if (value == '') 
             setParams({});
-        else
-            setParams({
-                q: value
-            });
-    };
+        else 
+            setParams({q: value});
+        }
+    ;
 
     const postLines = posts
         .filter(p => p.text)
@@ -104,19 +101,16 @@ function initSearch() {
     const result = {};
     for (const post of postLines) {
         for (const line of post.lines) {
-            if (line == '')
+            if (line == '') 
                 continue;
-            if (!result[line])
+            if (!result[line]) 
                 result[line] = new Set();
             result[line].add(post.id);
         }
     }
     const resultList = Object
         .keys(result)
-        .map(k => ({
-            line: k,
-            ids: result[k]
-        }))
+        .map(k => ({line: k, ids: result[k]}))
         .filter(a => a.ids.size > 2);
 
     resultList.sort((a, b) => b.ids.size - a.ids.size);
@@ -220,7 +214,7 @@ const html = {
         return `<h3 class="center sticky"><time datetime="${date.toISOString()}">${formatDate(date)}</time></h3>`
     },
     post: (post) => {
-        if (!post)
+        if (!post) 
             return '';
         const date = new Date(post.timestamp * 1000);
         const edate = new Date(post.edited * 1000);
@@ -257,7 +251,7 @@ const html = {
         <div class="text">${addHighlights(post.text)}</div>`;
     },
     img: (image) => {
-        if (!image)
+        if (!image) 
             return '';
         return `<a href="${image.url}" target="_blank">
           ${ifExists(image.filename, x => `
@@ -278,16 +272,16 @@ const html = {
         </div>`;
     },
     thumbnail: (src) => {
-        if (!src)
+        if (!src) 
             return '';
         return `<img src="${src}" class="contain" width="100" height="100">`;
     }
 };
-const answerButtonClass = (postId) => editedAnswers[postId] ?
-    'edited' :
-    answers[postId] && answers[postId].length ?
-    '' :
-    'empty';
+const answerButtonClass = (postId) => editedAnswers[postId]
+    ? 'edited'
+    : answers[postId] && answers[postId].length
+        ? ''
+        : 'empty';
 
 const withLocalUrl = (image) => ({
     filename: image.filename,
@@ -300,11 +294,11 @@ const localImgSrc = src => 'data/images/' + src
 
 const legendPattern = new RegExp(`([^a-zA-Z])(${Object.keys(legend).join('|')})([^a-zA-Z])`, 'g');
 
-const addHighlights = text => !text ?
-    '' :
-    text.replace(/(^>[^>].*\n?)+/g, (match) => `<q>${match}</q>`).replace(/(https?:\/\/[.\w\/?\-=&#]+)/g, (match) => match.endsWith('.jpg') ?
-        `<img src="${match}" alt="image">` :
-        `<a href="${match}" target="_blank">${match}</a>`).replace(/(\[[^[]+])/g, (match) => `<strong>${match}</strong>`).replace(legendPattern, (match, p1, p2, p3, o, s) => `${p1}<abbr title="${legend[p2]}">${p2}</abbr>${p3}`);
+const addHighlights = text => !text
+    ? ''
+    : text.replace(/(^>[^>].*\n?)+/g, (match) => `<q>${match}</q>`).replace(/(https?:\/\/[.\w\/?\-=&#]+)/g, (match) => match.endsWith('.jpg')
+        ? `<img src="${match}" alt="image">`
+        : `<a href="${match}" target="_blank">${match}</a>`).replace(/(\[[^[]+])/g, (match) => `<strong>${match}</strong>`).replace(legendPattern, (match, p1, p2, p3, o, s) => `${p1}<abbr title="${legend[p2]}">${p2}</abbr>${p3}`);
 
 // PARSE 8chan
 
@@ -322,13 +316,15 @@ function checkForNewPosts() {
             .from(new Set(posts.filter(p => !p.isNew && p.id && p.source == `8chan_${board}`)))
             .map(p => parseInt(p.id));
 
+        const alreadyCheckedPosts = Array
+            .from(new Set(posts.filter(p => p.isNew && p.source == `8chan_${board}`)))
+            .map(p => parseInt(p.id));
+
         const catalogUrl = `https://8ch.net/${board}/catalog.json`;
 
         getJson(catalogUrl).then(response => {
-
             const threads = response.reduce((p, e) => p.concat(e.threads), []);
             const threadIds = threads.map((p) => p.no);
-
             var newThreadIds = []
             if (threadIds.length == 1) {
                 console.log(threadIds);
@@ -338,10 +334,11 @@ function checkForNewPosts() {
             }
             console.log(`[${board}] Already parsed threads: ${alreadyParsedIds}`);
             console.log(`[${board}] Already parsed posts: ${alreadyParsedPosts}`);
+            console.log(`[${board}] Already checked posts: ${alreadyCheckedPosts}`);
             console.log(`[${board}] New threads: ${newThreadIds}`);
 
             Promise
-                .all(newThreadIds.map(thread => getLiveTripPostsByThread(qTrip, alreadyParsedPosts, thread, board)))
+                .all(newThreadIds.map(thread => getLiveTripPostsByThread(qTrip, alreadyCheckedPosts, alreadyParsedPosts, thread, board)))
                 .then(result => {
                     const newPosts = result.reduce((p, e) => p.concat(e), []);
                     notify(`found ${newPosts.length} new posts on ${board}`);
@@ -357,7 +354,7 @@ function checkForNewPosts() {
 
 }
 
-function getLiveTripPostsByThread(trip, preparsed, thread, board) {
+function getLiveTripPostsByThread(trip, postparsed, preparsed, thread, board) {
     const threadUrl = (thread) => `https://8ch.net/${board}/res/${thread}.json`;
     const referencePattern = />>(\d+)/g;
     return getJson(threadUrl(thread)).then(result => {
@@ -366,9 +363,9 @@ function getLiveTripPostsByThread(trip, preparsed, thread, board) {
         }
         const newThreadPosts = result
             .posts
-            .filter((x) => !preparsed.includes(x));
+            .filter((x) => !preparsed.includes(x.no) && !postparsed.includes(x.no));
+        console.log(`[${board}] New posts in ${thread} [next line]:`);
         console.log(newThreadPosts);
-        console.log(`[${board}] New posts in thread: ${newThreadPosts}`);
         const parsePosts = newThreadPosts.map(p => parseLive8chanPost(p, board));
 
         const newPosts = parsePosts.filter((p) => p.trip === qTrip);
@@ -387,14 +384,16 @@ function getLiveTripPostsByThread(trip, preparsed, thread, board) {
 }
 
 function parseLive8chanPost(post, board) {
-    const getImages = (chanPost) => [{
-        url: `https://media.8ch.net/file_store/${chanPost.tim}${chanPost.ext}`,
-        filename: chanPost.filename
-    }].concat(chanPost.extra_files);
+    const getImages = (chanPost) => [
+        {
+            url: `https://media.8ch.net/file_store/${chanPost.tim}${chanPost.ext}`,
+            filename: chanPost.filename
+        }
+    ].concat(chanPost.extra_files);
     return {
-        images: post.tim ?
-            getImages(post) :
-            [],
+        images: post.tim
+            ? getImages(post)
+            : [],
         id: post
             .no
             .toString(),
@@ -430,13 +429,13 @@ function cleanHtmlText(htmlText) {
         .replace(paragraphPattern, (m, p1) => `${p1}\n`);
 }
 
-//////////////////// answers functions //////////////////
+// ANSWERS
 
 const ifElement = (selector, callback) => {
     const element = document.querySelector(selector);
-    if (element)
+    if (element) 
         return callback(element);
-};
+    };
 
 function copyAnswers() {
     ifElement('article.selected', selectedArticle => {
@@ -515,9 +514,9 @@ function selectAnswers(selectedPostId) {
             .querySelector('aside h1')
             .innerHTML = `Answers for <a href="#post${selectedPostId}">${selectedPostId}</a>`;
 
-        const answer = editedAnswers[selectedPostId] !== undefined ?
-            editedAnswers[selectedPostId] :
-            answers[selectedPostId] || '';
+        const answer = editedAnswers[selectedPostId] !== undefined
+            ? editedAnswers[selectedPostId]
+            : answers[selectedPostId] || '';
         editor.value(answer);
         // refresh hack
         if (editor.isPreviewActive()) {
@@ -545,9 +544,9 @@ function setPreview(editor) {
     const wrapper = editor
         .codemirror
         .getWrapperElement();
-    const toolbar = editor.options.toolbar ?
-        editor.toolbarElements.preview :
-        null;
+    const toolbar = editor.options.toolbar
+        ? editor.toolbarElements.preview
+        : null;
     const preview = wrapper.lastChild;
 
     preview
