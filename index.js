@@ -304,6 +304,7 @@ const addHighlights = text => !text
 // PARSE 8chan
 
 function checkForNewPosts() {
+    clearTimeout(timerId)
     const boards = ['greatawakening', 'qresearch'];
     notify(`Searching for new posts`);
 
@@ -328,7 +329,7 @@ function checkForNewPosts() {
             const threadIds = threads.map((p) => p.no);
             var newThreadIds = []
             if (threadIds.length == 1) {
-                console.log(threadIds);
+                // console.log(threadIds); //
                 newThreadIds = threadIds;
             } else {
                 newThreadIds = threadIds.filter((id) => !alreadyParsedIds.includes(id));
@@ -353,6 +354,8 @@ function checkForNewPosts() {
         });
     }
 
+    var timerId = setTimeout(checkForNewPosts, 900000);
+
 }
 
 function getLiveTripPostsByThread(trip, postparsed, preparsed, thread, board) {
@@ -365,8 +368,8 @@ function getLiveTripPostsByThread(trip, postparsed, preparsed, thread, board) {
         const newThreadPosts = result
             .posts
             .filter((x) => !preparsed.includes(x.no) && !postparsed.includes(x.no));
-        console.log(`[${board}] New posts in ${thread} [next line]:`);
-        console.log(newThreadPosts);
+        console.log(`[${board}] New posts in thread ${thread} (next line):`);
+        console.log(newThreadPosts, newThreadPosts.length > 0);
         const parsePosts = newThreadPosts.map(p => parseLive8chanPost(p, board));
 
         const newPosts = parsePosts.filter((p) => p.trip === qTrip);
