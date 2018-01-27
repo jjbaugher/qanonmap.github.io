@@ -60,6 +60,7 @@ const legend = {
     'JC': '[Former DNI Director James Clapper] or [Former FBI Director James Comey]',
     'JFK': 'John Fitzgereld Kennedy',
     'JK': '[John Kerry] or [Jared Kushner]',
+    'JS': 'John Solomon',
     'KKK': 'Klu Klux Klan, founded by Democrats',
     'KSA': 'Kingdom of Saudi Arabia',
     'LL': 'Lorreta Lynch, Former Attorney General',
