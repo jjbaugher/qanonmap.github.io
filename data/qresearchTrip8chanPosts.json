@@ -1258,5 +1258,116 @@
         "link": "https://8ch.net//qresearch/res/171330.html#171424"
       }
     ]
+  },
+  {
+    "id": "174873",
+    "userId": "bc342e",
+    "timestamp": 1517034871,
+    "subject": null,
+    "name": "Q",
+    "email": null,
+    "trip": "!UW.yye1fxo",
+    "text": ">>174742\nThis came from outside of Twitter.\nQ\n",
+    "images": [],
+    "threadId": "174635",
+    "source": "8chan_qresearch",
+    "link": "https://8ch.net//qresearch/res/174635.html#174873",
+    "references": [
+      {
+        "id": "174742",
+        "userId": "2a51f9",
+        "timestamp": 1517034315,
+        "subject": null,
+        "name": "Anonymous",
+        "email": null,
+        "trip": null,
+        "text": ">>174662\n@Jack ain't in cuffs yet and still trying to control the narrative. Too bad he was taking money and profiting from people tied to the EO! #GOODBYE @JACK\n",
+        "images": [],
+        "threadId": "174635",
+        "source": "8chan_qresearch",
+        "link": "https://8ch.net//qresearch/res/174635.html#174742"
+      }
+    ]
+  },
+  {
+    "id": "174929",
+    "userId": "bc342e",
+    "timestamp": 1517035071,
+    "subject": null,
+    "name": "Q",
+    "email": null,
+    "trip": "!UW.yye1fxo",
+    "text": ">>174873\nSubmission complete.\nQ\n",
+    "images": [],
+    "threadId": "174635",
+    "source": "8chan_qresearch",
+    "link": "https://8ch.net//qresearch/res/174635.html#174929",
+    "references": [
+      {
+        "id": "174873",
+        "userId": "bc342e",
+        "timestamp": 1517034871,
+        "subject": null,
+        "name": "Q",
+        "email": null,
+        "trip": "!UW.yye1fxo",
+        "text": ">>174742\nThis came from outside of Twitter.\nQ\n",
+        "images": [],
+        "threadId": "174635",
+        "source": "8chan_qresearch",
+        "link": "https://8ch.net//qresearch/res/174635.html#174873",
+        "references": [
+          {
+            "id": "174742",
+            "userId": "2a51f9",
+            "timestamp": 1517034315,
+            "subject": null,
+            "name": "Anonymous",
+            "email": null,
+            "trip": null,
+            "text": ">>174662\n@Jack ain't in cuffs yet and still trying to control the narrative. Too bad he was taking money and profiting from people tied to the EO! #GOODBYE @JACK\n",
+            "images": [],
+            "threadId": "174635",
+            "source": "8chan_qresearch",
+            "link": "https://8ch.net//qresearch/res/174635.html#174742"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "175260",
+    "userId": "bc342e",
+    "timestamp": 1517036774,
+    "subject": null,
+    "name": "Q",
+    "email": null,
+    "trip": "!UW.yye1fxo",
+    "text": " >>175139\nSelect news members / journalists are vital to delivering the message (as are YOU).\nImagine if these people were removed.\nTotal control re: MSM.\nThey represent a clear and present danger to the enemy.\nRe-read past crumbs re: security.\nWhere is JS?\nHow do we truly protect those important to us?\n[19] immediates [no longer with us].\nSelf-suicide if actioned.\nReal life.\nQ\n",
+    "images": [],
+    "threadId": "174635",
+    "source": "8chan_qresearch",
+    "link": "https://8ch.net//qresearch/res/174635.html#175260",
+    "references": [
+      {
+        "id": "175139",
+        "userId": "64748a",
+        "timestamp": 1517036055,
+        "subject": null,
+        "name": "Anonymous",
+        "email": null,
+        "trip": null,
+        "text": "Form 1649 false imprisonment\nWas Hannity sending out a sos?\n",
+        "images": [
+          {
+            "url": "https://media.8ch.net/file_store/5113674fc5f6d72bd94991bd733d2722722cae9c12274180dedfe983e74a0cc1.jpeg",
+            "filename": "18A539B4-3085-4E11-8945-D….jpeg"
+          }
+        ],
+        "threadId": "174635",
+        "source": "8chan_qresearch",
+        "link": "https://8ch.net//qresearch/res/174635.html#175139"
+      }
+    ]
   }
 ]
