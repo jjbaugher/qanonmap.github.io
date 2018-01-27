@@ -293,7 +293,7 @@ const localImgSrc = src => 'data/images/' + src
     .split('/')
     .slice(-1)[0];
 
-const legendPattern = new RegExp(`([^a-zA-Z])(${Object.keys(legend).join('|')})([^a-zA-Z])`, 'g');
+const legendPattern = new RegExp(`(?!<a[^>]*>)([^a-zA-Z])(${Object.keys(legend).join('|')})([^a-zA-Z])(?![^<]*<\/a>)`, 'g');
 
 const addHighlights = text => !text
     ? ''
