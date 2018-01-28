@@ -325,7 +325,7 @@ function checkForNewPosts() {
         const catalogUrl = `https://8ch.net/${board}/catalog.json`;
 
         getJson(catalogUrl).then(response => {
-            const threads = response.reduce((p, e) => p.concat(e.threads), []).slice(0, 20);
+            const threads = response.reduce((p, e) => p.concat(e.threads), []).slice(0, 25);
             const threadIds = threads.map((p) => p.no);
             var newThreadIds = []
             if (threadIds.length == 1) {
@@ -343,7 +343,7 @@ function checkForNewPosts() {
                 .all(newThreadIds.map(thread => getLiveTripPostsByThread(qTrip, alreadyCheckedPosts, alreadyParsedPosts, thread, board)))
                 .then(result => {
                     const newPosts = result.reduce((p, e) => p.concat(e), []);
-                    notify(`found ${newPosts.length} new posts on ${board}`);
+                    notify(`Found ${newPosts.length} new posts on ${board}`);
 
                     newPosts.sort((a, b) => b['timestamp'] - a['timestamp']);
                     posts.unshift(...newPosts);
@@ -352,6 +352,16 @@ function checkForNewPosts() {
                     notify(null);
                 });
         });
+    }
+
+    const newPostsAdded = Array
+        .from(new Set(posts.filter(p => p.isNew)))
+        .map(p => parseInt(p.id));
+
+    if (newPostsAdded.length > 0) {
+        document.title = `${newPostsAdded.length} new posts`
+    } else {
+        document.title = `0 new posts`
     }
 
     var timerId = setTimeout(checkForNewPosts, 900000);
