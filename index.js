@@ -325,7 +325,7 @@ function checkForNewPosts() {
         const catalogUrl = `https://8ch.net/${board}/catalog.json`;
 
         getJson(catalogUrl).then(response => {
-            const threads = response.reduce((p, e) => p.concat(e.threads), []);
+            const threads = response.reduce((p, e) => p.concat(e.threads), []).slice(0, 20);
             const threadIds = threads.map((p) => p.no);
             var newThreadIds = []
             if (threadIds.length == 1) {
