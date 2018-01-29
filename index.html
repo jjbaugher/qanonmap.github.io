@@ -8,15 +8,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="lib/simplemde.min.css">
-  <script src="lib/simplemde.min.js"></script>
+  <link rel="stylesheet" href="twitter.css">
+  <script src="https://platform.twitter.com/widgets.js"></script>
+  <script src="lib/markdown-it.min.js"></script>
 
   <link rel="stylesheet" href="core.css">
   <link rel="stylesheet" href="index.css">
   <script src="data/legend.js"></script>
   <script src="core.js"></script>
   <script src="index.js"></script>
-  <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -30,32 +30,37 @@
     <div class="stretch row">
       <button onclick="checkForNewPosts()">↻</button>
     </div>
+    <div class="stretch">
+      <form id="submitChanges" class="row space" hidden>
+        <span id="editSummary">
+          <strong></strong> change</span>
+        <input type="text" name="accessCode" placeholder="access token">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
     <div class="row hide-mobile">
       <a href="news.html" target="_parent">
         <button>Q related news</button>
       </a>
-      <textarea id="Copy" placeholder="click select-all copy"></textarea>
-      <button onclick="copyAnswers()" class="answers">Copy edited answers</button>
-      <button onclick="toggleAnswers()">Show Answers</button>
     </div>
   </header>
   <div class="row">
     <main class="stretch"></main>
-    <aside>
-      <div class="row">
-        <h1 class="stretch">Answers</h1>
-        <div>
-          <button onclick="resetAnswer()">Reset</button>
-        </div>
-      </div>
-      <div id="editor-wrapper">
-        <textarea id="answers"></textarea>
-      </div>
-    </aside>
   </div>
 
   <div id="fixed-bottom">
     <span id="notification" hidden></span>
+  </div>
+
+  <div class="dialog" id="story">
+    <div>
+      <button onclick="toggleDialog('story')" class="close icon">close</button>
+      <header></header>
+      <div class="container">
+
+      </div>
+
+    </div>
   </div>
 </body>
 

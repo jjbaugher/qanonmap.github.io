@@ -1,26 +1,5 @@
-aside {
-  width: 440px;
-  background-color: hsl(208, 70%, 98%);
-  overflow-y: auto;
-  height: ~'calc(100vh - 50px)';
-  padding: 10px;
-  box-sizing: border-box;
-  color: hsl(0, 0%, 33%);
-  box-shadow: -1px 2px 4px 0 hsla(0, 0%, 0%, 0.2);
-  z-index: 10;
-  position: relative;
-
-  h1 > * {
-    margin-left: 10px
-  }
-  h2 {
-    color: hsl(0, 0%, 50%);
-    text-align: center;
-  }
-  h3 {
-    font-size: 14px;
-  }
-}
+@import "icons";
+@import "form";
 
 article {
   position: relative;
@@ -63,41 +42,38 @@ article {
     background-color: hsl(208, 70%, 98%);
     box-shadow: 0 1px 4px 0 hsla(0, 0%, 0%, 0.2);
   }
-  >button {
+  > button {
     position: absolute;
     right: 0;
     bottom: 0;
     z-index: 2;
   }
-  .links {
-    > div {
-      position: relative;
-      background-color: hsl(0, 0%, 98%);
-      padding: 10px;
-      margin: 5px -10px;
-      max-width: 100%;
-
-      a {
-        text-decoration: none;
-        color: inherit;
-        &:hover {
-          color: #34459d;
-        }
-      }
-      small {
-        color: hsl(0, 0%, 50%);
-        margin-left: 20px;
-        text-align: center;
-        display: block;
-      }
-    }
+  > blockquote {
+    margin: 0 0 10px;
+    padding: 10px;
+    border: 1px solid hsl(0, 0%, 50%);
   }
 }
 
-blockquote {
-  margin: 0 0 10px;
-  padding: 10px;
-  border: 1px solid hsl(0, 0%, 50%);
+.news {
+  position: relative;
+  background-color: hsl(0, 0%, 95%);
+  padding: 20px;
+  margin: 0 -20px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      color: #34459d;
+    }
+  }
+  small {
+    color: hsl(0, 0%, 50%);
+    margin-left: 20px;
+    text-align: center;
+    display: block;
+  }
 }
 
 q {
@@ -137,31 +113,6 @@ q {
   background-color: hsl(0, 50%, 85%);
 }
 
-article button.answers {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.answers.empty {
-  background-color: hsl(0, 80%, 40%);
-  color: white;
-}
-
-.answers.edited {
-  background-color: hsl(120, 80%, 40%);
-  color: white;
-}
-
-textarea {
-  border: 1px solid hsl(0, 0%, 90%);
-}
-
-#Copy {
-  width: 1px;
-  opacity: 0;
-}
-
 #fixed-bottom {
   position: fixed;
   bottom: 0;
@@ -173,47 +124,18 @@ textarea {
   }
 }
 
-/*
-EDITOR
- */
-.editor-toolbar {
-  border: none;
-}
-
-.disabled-for-preview :not(.no-disable) {
-  visibility: hidden;
-}
-
-i.separator {
-  display: none !important;
-}
-
-a.fa.fa-eye.no-disable.active::before {
-  content: "\f040";
-}
-
-.CodeMirror {
-  border-style: dotted;
-}
-
-.disabled-for-preview + .CodeMirror {
-  border: none;
-}
-
-.editor-preview {
-  border: none;
-  background-color: hsl(208, 70%, 98%);
-  color: hsl(0, 0%, 33%);
+#story {
+  form {
+    background-color: hsl(0, 0%, 90%);
+    padding: 20px;
+    margin: 0 -20px;
+  }
 }
 
 /*
 Answers toggle
  */
 @media screen and (max-width: 1000px) {
-  aside {
-    display: none;
-  }
-
   .hide-mobile {
     display: none;
   }
@@ -237,14 +159,83 @@ Answers toggle
   }
 }
 
-.answers-disabled {
-  .answers {
-    display: none;
+/*
+Dialog
+ */
+button.close {
+  font-size: 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  padding: 3px;
+}
+
+.dialog {
+  display: none;
+
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 100;
+  box-shadow: 0 0 45px hsla(0, 0%, 0%, 0.9);
+
+  background-color: white;
+
+  &.open, &.opening {
+    display: block;
   }
-  aside {
-    display: none;
-  }
-  section {
+  > * {
+    overflow: auto;
     width: 100%;
+    max-width: 90vw;
+    max-height: 95vh;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  &.open {
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%);
+    & ~ .overlay {
+      display: block;
+    }
+  }
+}
+
+.overlay {
+  display: none;
+  background-image: linear-gradient(to top right, rgba(43, 40, 50, 0.8) 0%, rgba(83, 86, 99, 0.8) 45%, rgba(69, 77, 91, 0.6) 60%);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 99;
+}
+
+.overlay:after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1001;
+  background-image: linear-gradient(-19deg, rgba(43, 40, 50, 0.8) 0%, rgba(43, 40, 50, 0.4) 46%, rgba(0, 0, 0, 0.05) 50%);
+  filter: blur(70px);
+}
+
+header iframe {
+  margin-top: -20px;
+}
+.container > * {
+  margin: 0 -20px;
+  padding: 20px;
+}
+
+.EmbeddedTweet {
+  article {
+    padding: 0;
+    margin: 0;
+    width: auto;
   }
 }
