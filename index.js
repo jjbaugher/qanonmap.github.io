@@ -354,17 +354,9 @@ function checkForNewPosts() {
         });
     }
 
-    const newPostsAdded = Array
-        .from(new Set(posts.filter(p => p.isNew)))
-        .map(p => parseInt(p.id));
-
-    if (newPostsAdded.length > 0) {
-        document.title = `${newPostsAdded.length} new posts`
-    } else {
-        document.title = `0 new posts`
-    }
-
     var timerId = setTimeout(checkForNewPosts, 900000);
+
+    setTimeout(updateTitle, 10000);
 
 }
 
@@ -441,6 +433,20 @@ function cleanHtmlText(htmlText) {
         .replace(linkPattern, (m, p1) => `${p1}`)
         .replace(quotePattern, (m, p1) => `>${p1}\n`)
         .replace(paragraphPattern, (m, p1) => `${p1}\n`);
+}
+
+function updateTitle() {
+    const newPostsAdded = Array
+        .from(new Set(posts.filter(p => p.isNew)))
+        .map(p => parseInt(p.id));
+
+    if (newPostsAdded.length == 1) {
+        document.title = `${newPostsAdded.length} new post`
+    } else if (newPostsAdded > 1) {
+        document.title = `${newPostsAdded.length} new posts`
+    } else {
+        document.title = `0 new posts`
+    }
 }
 
 // ANSWERS
