@@ -401,8 +401,7 @@ function checkForNewPosts() {
 
     var timerId = setTimeout(checkForNewPosts, 900000);
 
-    setTimeout(updateTitle, 10000);
-
+    setTimeout(updateIcon, 10000);
 }
 
 function getLiveTripPostsByThread(trip, postparsed, preparsed, thread, board) {
@@ -480,17 +479,13 @@ function cleanHtmlText(htmlText) {
         .replace(paragraphPattern, (m, p1) => `${p1}\n`);
 }
 
-function updateTitle() {
+function updateIcon() {
     const newPostsAdded = Array
         .from(new Set(posts.filter(p => p.isNew)))
         .map(p => parseInt(p.id));
 
-    if (newPostsAdded.length == 1) {
-        document.title = `${newPostsAdded.length} new post`
-    } else if (newPostsAdded > 1) {
-        document.title = `${newPostsAdded.length} new posts`
-    } else {
-        document.title = `0 new posts`
+    if (newPostsAdded >= 1) {
+        Tinycon.setBubble(newPostsAdded.length)
     }
 }
 
