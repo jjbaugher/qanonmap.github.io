@@ -6,6 +6,7 @@ let editedAnswers = {};
 let postOrder = [];
 // !UW.yye1fxo has not been compromised at this time
 let qTrip = '!UW.yye1fxo';
+let newcount = 0;
 const md = window.markdownit();
 const isEditing = () => location.hash === '#edit';
 const edits = {};
@@ -401,7 +402,6 @@ function checkForNewPosts() {
 
     var timerId = setTimeout(checkForNewPosts, 900000);
 
-    setTimeout(updateIcon, 10000);
 }
 
 function getLiveTripPostsByThread(trip, postparsed, preparsed, thread, board) {
@@ -429,6 +429,10 @@ function getLiveTripPostsByThread(trip, postparsed, preparsed, thread, board) {
             }
         }
         console.log(`[${board}] Added ${newPosts.length} posts from thread ${thread}`);
+        newcount = newcount + newPosts.length
+        if (newcount >= 1) {
+            Tinycon.setBubble(newcount)
+        }
         return newPosts;
     });
 }
@@ -477,16 +481,6 @@ function cleanHtmlText(htmlText) {
         .replace(linkPattern, (m, p1) => `${p1}`)
         .replace(quotePattern, (m, p1) => `>${p1}\n`)
         .replace(paragraphPattern, (m, p1) => `${p1}\n`);
-}
-
-function updateIcon() {
-    const newPostsAdded = Array
-        .from(new Set(posts.filter(p => p.isNew)))
-        .map(p => parseInt(p.id));
-
-    if (newPostsAdded >= 1) {
-        Tinycon.setBubble(newPostsAdded.length)
-    }
 }
 
 /// editing
