@@ -6,7 +6,7 @@ const legend = {
     'AM': 'Andrew McCabe, FBI Deputy Director',
     'Anon': 'Anonymous',
     'ANTIFA': 'Anti-Fascists, Soros backed domestic terrorists',
-    'AS': 'Antonin Scalia',
+    'AS': '[Adam Schiff] or [Antonin Scalia]',
     'AUS': 'Australia',
     'BDT': 'Bangladeshi Taka, ref. Bangladesh',
     'BIS': 'Bank for International Settlements',
