@@ -107,6 +107,7 @@ const legend = {
     'SS': 'Secret Service',
     'ST': 'Seal Team (eg. Seal Team 6)',
     'TG': 'Trey Gowdy',
+    'TSA': 'Transportation Security Administration',
     'U1': 'Uranium 1',
     'UK': 'United Kingdom',
     'US': 'United States',
