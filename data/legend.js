@@ -31,6 +31,7 @@ const legend = {
     'DOE': 'Department of Energy',
     'DOJ': 'Department of Justice',
     'DWS': 'Debbie Wasserman Schultz',
+    'EBS': 'Emergency Broadcast System',
     'EM': 'Elon Musk',
     'EMP': 'Electromagnetic Pulse',
     'EMS': 'Emergency Medical Services',
