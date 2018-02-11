@@ -225,6 +225,18 @@ function render(items) {
     container.appendChild(subContainer);
 }
 
+function readableColour($bg) {
+    const r = parseInt($bg.substr(0, 2), 16);
+    const g = parseInt($bg.substr(2, 2), 16);
+    const b = parseInt($bg.substr(4, 2), 16);
+    const contrast = Math.sqrt(r * r * .241 + g * g * .691 + b * b * .068);
+    if (contrast > 130) {
+        return '000000'
+    } else {
+        return 'FFFFFF'
+    };
+}
+
 const html = {
     postWithReplies: (post) => {
         return `
@@ -233,7 +245,7 @@ const html = {
           ${forAll(post.references, x => `
           <blockquote id="post${post.id}">${html.post(x)}</blockquote>`)}
           ${html.post(post)}
-          <!--<button onclick="" class="twitter">🐦</button>-->
+          <!--<button onclick="openTweet(${post.id})">🐦</button>-->
           <!--<button class="">📰</button>-->
           ${ifExists(stories[post.id] || isEditing(), x => `
           <button onclick="openStory(${post.id})">answers</button>
@@ -264,7 +276,7 @@ const html = {
             <span class="email" title="email">${x}</span>`)}
 
             ${ifExists(post.userId, x => `
-            <span class="userid" title="userid">ID: ${x}</span>`)}
+            <span class="userid" title="userid" style="background-color: #${x}; padding: 0px 5px; border-radius: 8px; color: #${readableColour(x)}">ID: ${x}</span>`)}
 
             <a href="${post.link}" target="_blank">${post.id}</a>
             
