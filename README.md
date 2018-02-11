@@ -7,6 +7,5 @@ This fork of qcodefag.github.io attempts to improve upon it while at the same ti
 ## Notable features
 
 * No ad trackers or other gimmicks.
-* Retains visible answers for users to enter.
 * 15-minute autorefresh in browser.
 * Other enhancements and fixes.
