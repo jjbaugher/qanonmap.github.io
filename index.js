@@ -20,7 +20,7 @@ function main() {
         .all([
         // getJson(`${serverUrl}/story`)
     ].concat([
-        'story',
+        //'story',
         'pol4chanPosts',
         'polTrip8chanPosts',
         'cbtsNonTrip8chanPosts',
@@ -30,22 +30,21 @@ function main() {
         'qresearchTrip8chanPosts'
     ].map(getLocalJson)))
         .then(values => {
-            stories = values[0];
+            let i = 0
+            //stories = values[i++];
             posts = []
-                .concat(values[1])
-                .concat(values[2])
-                .concat(values[3])
-                .concat(values[4])
-                .concat(values[5])
-                .concat(values[6])
-                .concat(values[7]);
+                .concat(values[i++])
+                .concat(values[i++])
+                .concat(values[i++])
+                .concat(values[i++])
+                .concat(values[i++])
+                .concat(values[i++])	
+                .concat(values[i++]);
             posts.sort((a, b) => b.timestamp - a.timestamp);
             postOrder.push(...(posts.map(p => p.id).reverse()));
 
             render(posts);
             initSearch();
-
-            checkForNewPosts();
         });
 
     if (isEditing()) {
@@ -223,6 +222,7 @@ function render(items) {
         subContainer.appendChild(element);
     }
     container.appendChild(subContainer);
+    lazyload();
 }
 
 function readableColour($bg) {
@@ -298,7 +298,7 @@ const html = {
         return `<a href="${image.url}" target="_blank">
           ${ifExists(image.filename, x => `
           <span class="filename" title="file name">${x}</span>`)}
-          <img src="${image.url}" class="contain" width="300" height="300">
+          <img data-src="${image.url}" class="contain lazyload" width="300" height="300">
         </a>`;
     },
     news: item => {
