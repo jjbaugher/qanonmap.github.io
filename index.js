@@ -45,6 +45,8 @@ function main() {
 
             render(posts);
             initSearch();
+
+            setTimeout(checkForNewPosts, 15000);
         });
 
     if (isEditing()) {
