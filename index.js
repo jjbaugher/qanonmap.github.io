@@ -38,7 +38,7 @@ function main() {
                 .concat(values[i++])
                 .concat(values[i++])
                 .concat(values[i++])
-                .concat(values[i++])	
+                .concat(values[i++])
                 .concat(values[i++]);
             posts.sort((a, b) => b.timestamp - a.timestamp);
             postOrder.push(...(posts.map(p => p.id).reverse()));
@@ -356,7 +356,7 @@ function addHighlights(text) {
         ? ''
         : text.replace(/(^>[^>].*\n?)+/g, (match) => `<q>${match}</q>`).replace(/https\:\/\/\s/g, (match) => `https://`).replace(/(https?:\/\/[.\w\/?\-=&#]+)/g, (match) => match.endsWith('.jpg')
             ? `<img src="${match}" alt="image">`
-            : `<a href="${match}" target="_blank">${match}</a>`).replace(/(\[[^[]+])/g, (match) => `<strong>${match}</strong>`).replace(legendPattern, (match, p1, p2, p3, o, s) => `${p1}<abbr title="${legend[p2]}">${p2}</abbr>${p3}`);
+            : `<a href="${match}" target="_blank">${match}</a>`).replace(/\n/g, () => `<br \/>`).replace(/\s(?![^<]*>|\n)/g, (match) => `&#32;`).replace(/\/(?![^<]*>|<\/*[>$]])/g, (match) => `&#47;`).replace(/(\[[^[]+])/g, (match) => `<strong>${match}</strong>`).replace(legendPattern, (match, p1, p2, p3, o, s) => `${p1}<abbr title="${legend[p2]}">${p2}</abbr>${p3}`);
 }
 
 // PARSE 8chan
