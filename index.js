@@ -20,7 +20,7 @@ function main() {
         .all([
         // getJson(`${serverUrl}/story`)
     ].concat([
-        //'story',
+        'story',
         'pol4chanPosts',
         'polTrip8chanPosts',
         'cbtsNonTrip8chanPosts',
@@ -31,7 +31,7 @@ function main() {
     ].map(getLocalJson)))
         .then(values => {
             let i = 0
-            //stories = values[i++];
+            stories = values[i++];
             posts = []
                 .concat(values[i++])
                 .concat(values[i++])
@@ -262,6 +262,11 @@ const html = {
             return '';
         const date = new Date(post.timestamp * 1000);
         const edate = new Date(post.edited * 1000);
+        const postId = post.source !== undefined
+            ? (post.source.includes("8chan")
+                ? (pid) => '<span class="userid" title="userid" style="background-color: #' + pid + '; padding: 0px 5px; border-radius: 8px; color: #' + readableColour(pid) + '">ID: ' + pid + '</span>'
+                : (pid) => '<span class="userid" title="userid">ID: ' + pid + '</span>')
+            : (pid) => '<span class="userid" title="userid">ID: ' + pid + '</span>'
         return `
         <header>
             <time datetime="${date.toISOString()}">${formatDate(date)} ${formatTime(date)}</time>
@@ -278,7 +283,7 @@ const html = {
             <span class="email" title="email">${x}</span>`)}
 
             ${ifExists(post.userId, x => `
-            <span class="userid" title="userid" style="background-color: #${x}; padding: 0px 5px; border-radius: 8px; color: #${readableColour(x)}">ID: ${x}</span>`)}
+            ${postId(x)}`)}
 
             <a href="${post.link}" target="_blank">${post.id}</a>
             
