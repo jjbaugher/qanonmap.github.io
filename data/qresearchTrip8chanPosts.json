@@ -5808,5 +5808,39 @@
     "timestamp": 1518829517,
     "trip": "!UW.yye1fxo",
     "userId": "732b35"
+  },
+  {
+    "email": null,
+    "id": "422626",
+    "images": [],
+    "link": "https://8ch.net/qresearch/res/421920.html#422626",
+    "name": "Q ",
+    "references": [
+      {
+        "email": null,
+        "id": "422606",
+        "images": [
+          {
+            "filename": "ClipboardImage.png",
+            "url": "https://media.8ch.net/file_store/0ac9f1a7bcac881a89f7b4004f20fffe82791d30e8f9a2704aeb28241820afc5.png"
+          }
+        ],
+        "link": "https://8ch.net/qresearch/res/421920.html#422606",
+        "name": "Anonymous",
+        "source": "8chan_qresearch",
+        "subject": null,
+        "text": ">>422568\noh fuck! this page says its sponsored by bill gates\n fucking GOOGLE\nEPIC (?) looks like the russian Gannett thing walnut sauce sign that the autists dug up\n",
+        "threadId": "421920",
+        "timestamp": 1519001115,
+        "userId": "1db6b5"
+      }
+    ],
+    "source": "8chan_qresearch",
+    "subject": null,
+    "text": ">>422606\nGannett is also located in McLean, VA. \nCoincidence? \nJust the tip.\nQ\n",
+    "threadId": "421920",
+    "timestamp": 1519001281,
+    "trip": "!UW.yye1fxo",
+    "userId": "a3bf26"
   }
 ]
