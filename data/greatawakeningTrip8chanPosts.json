@@ -1603,6 +1603,7 @@
     "userId": null
   },
   {
+    "edited": 1519263245,
     "email": null,
     "id": "453",
     "images": [],
@@ -1610,7 +1611,7 @@
     "name": "Q",
     "source": "8chan_greatawakening",
     "subject": null,
-    "text": "SEC_TEST_1_\nSEC_TEST_2_\nSEC_TEST_3_\nSEC_TEST_4_\nSEC_TEST_5_\n[DEVICE_1_X]\n[SECURE_COMMS_ACT]\n[SIG_5:5_READ]\n[                                                          ]\nQ\n",
+    "text": "SEC_TEST_1_\nSEC_TEST_2_\nSEC_TEST_3_\nSEC_TEST_4_\nSEC_TEST_5_\n[DEVICE_1_X]\n[SECURE_COMMS_ACT]\n[SIG_5:5_READ]\n[                                                          ]\nQ\n\nSAT_SEC_1_X_GOOD\nSAT_REC_GOOD\nSAT_RELAY_GOOD\nSAT_PING_GOOD\nSAT_SIG_GOOD\nSAT_LINE_GOOD\nSAT_HOLD_CONF\nHOLD_NOW_CONF\nSAT_HOLD_DED_1_X_YES\nSAT_HOLD_DED_1_X_CONF_60D\nSAT_HOLD_DED_OPT_60D+\nAUTH_HOLD_REL_GOOD",
     "threadId": "452",
     "timestamp": 1519263245,
     "trip": "!UW.yye1fxo",
@@ -1625,9 +1626,9 @@
     "source": "8chan_greatawakening",
     "subject": null,
     "text": "DELTA [6] CONF.\nCOMMS GOOD.\nOPERATIONAL.\nQ\n",
-    "threadId": "452"
+    "threadId": "452",
     "timestamp": 1519264150,
     "trip": "!UW.yye1fxo",
-    "userId": null,
+    "userId": null
   }
 ]
