@@ -1593,7 +1593,7 @@
       }
     ],
     "link": "https://8ch.net/greatawakening/res/0.html#452",
-    "name": "Q ",
+    "name": "Q",
     "source": "8chan_greatawakening",
     "subject": null,
     "text": "[2] \nPatriot\n1. a person who loves, supports, and defends his or her country and its interests with devotion.\n2. a person who regards himself or herself as a defender, especially of individual rights, against presumed interference by the federal government.\nTraitor\n1. a person who betrays another, a cause, or any trust.\n2. a person who commits treason by betraying his or her country.\nQ\n",
@@ -1607,7 +1607,7 @@
     "id": "453",
     "images": [],
     "link": "https://8ch.net/greatawakening/res/452.html#453",
-    "name": "Q ",
+    "name": "Q",
     "source": "8chan_greatawakening",
     "subject": null,
     "text": "SEC_TEST_1_\nSEC_TEST_2_\nSEC_TEST_3_\nSEC_TEST_4_\nSEC_TEST_5_\n[DEVICE_1_X]\n[SECURE_COMMS_ACT]\n[SIG_5:5_READ]\n[                                                          ]\nQ\n",
@@ -1615,5 +1615,19 @@
     "timestamp": 1519263245,
     "trip": "!UW.yye1fxo",
     "userId": null
+  },
+  {
+    "email": null,
+    "id": "454",
+    "images": [],
+    "link": "https://8ch.net/greatawakening/res/452.html#454",
+    "name": "Q",
+    "source": "8chan_greatawakening",
+    "subject": null,
+    "text": "DELTA [6] CONF.\nCOMMS GOOD.\nOPERATIONAL.\nQ\n",
+    "threadId": "452"
+    "timestamp": 1519264150,
+    "trip": "!UW.yye1fxo",
+    "userId": null,
   }
 ]
