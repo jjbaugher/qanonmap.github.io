@@ -41,7 +41,7 @@ function main() {
                 .concat(values[i++])
                 .concat(values[i++]);
             posts.sort((a, b) => b.timestamp - a.timestamp);
-            postOrder.push(...(posts.map(p => p.id).reverse()));
+            postOrder.push(...(posts.map(p => (p.timestamp).toString()).reverse()));
 
             render(posts);
             initSearch();
@@ -243,7 +243,7 @@ const html = {
     postWithReplies: (post) => {
         return `
         <article id="post${post.id}" class="source_${post.source}${ifExists(post.timestampDeletion, () => ' deleted')}">
-          <span class="counter">${postOrder.indexOf(post.id) + 1}</span>
+          <span class="counter">${postOrder.indexOf((post.timestamp).toString()) + 1}</span>
           ${forAll(post.references, x => `
           <blockquote id="post${post.id}">${html.post(x)}</blockquote>`)}
           ${html.post(post)}
@@ -412,7 +412,7 @@ function checkForNewPosts() {
 
                     newPosts.sort((a, b) => b['timestamp'] - a['timestamp']);
                     posts.unshift(...newPosts);
-                    postOrder.push(...(newPosts.map(p => p.id).reverse()));
+                    postOrder.push(...(newPosts.map(p => (p.timestamp).toString()).reverse()));
                     render(posts);
                     notify(null);
                 });
