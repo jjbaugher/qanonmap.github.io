@@ -5971,5 +5971,49 @@
     "timestamp": 1519197070,
     "trip": "!UW.yye1fxo",
     "userId": "b0b86f"
+  },
+  {
+    "email": null,
+    "id": "458430",
+    "images": [],
+    "link": "https://8ch.net/qresearch/res/457699.html#458430",
+    "name": "Q",
+    "source": "8chan_qresearch",
+    "subject": null,
+    "text": "https:// www.archives.gov/files/research/jfk/releases/docid-32403785.pdf\nhttps:// www.intelligence.senate.gov/sites/default/files/hearings/ciasuseofjournal00unit.pdf\nWhy are the above [public declassified docs] highly protected?\nQ\n",
+    "threadId": "457699",
+    "timestamp": 1519278422,
+    "trip": "!UW.yye1fxo",
+    "userId": "403fc2"
+  },
+  {
+    "email": null,
+    "id": "458475",
+    "images": [],
+    "link": "https://8ch.net/qresearch/res/457699.html#458475",
+    "name": "Q",
+    "references": [
+      {
+        "email": null,
+        "subject": null,
+        "images": [],
+        "id": "458430",
+        "userId": "403fc2",
+        "timestamp": 1519278422,
+        "name": "Q",
+        "trip": "!UW.yye1fxo",
+        "text": "https:// www.archives.gov/files/research/jfk/releases/docid-32403785.pdf\nhttps:// www.intelligence.senate.gov/sites/default/files/hearings/ciasuseofjournal00unit.pdf\nWhy are the above [public declassified docs] highly protected?\nQ\n",
+        "source": "8chan_qresearch",
+        "link": "https://8ch.net/qresearch/res/457699.html#458430",
+        "threadId": "457699"
+      }
+    ],
+    "source": "8chan_qresearch",
+    "subject": null,
+    "text": ">>458430\nScroll through both docs.\nQ\n",
+    "threadId": "457699",
+    "timestamp": 1519278786,
+    "trip": "!UW.yye1fxo",
+    "userId": "403fc2"
   }
 ]
