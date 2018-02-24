@@ -27,12 +27,14 @@ function main() {
         'cbtsTrip8chanPosts',
         'thestormTrip8chanPosts',
         'greatawakeningTrip8chanPosts',
-        'qresearchTrip8chanPosts'
+        'qresearchTrip8chanPosts',
+        'qresearchNonTrip8chanPosts'
     ].map(getLocalJson)))
         .then(values => {
             let i = 0
             stories = values[i++];
             posts = []
+                .concat(values[i++])
                 .concat(values[i++])
                 .concat(values[i++])
                 .concat(values[i++])
