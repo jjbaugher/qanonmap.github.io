@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/qntmpkts
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://qanonmap.github.io
+  * I am qntmpkts (https://keybase.io/qntmpkts) on keybase.
+  * I have a public key ASACRLWhHGotFQfiqvTPlqrCaiVqRFMvgqJoKybvrLJBAAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101abd44568cd57759e5f8aa165d4a72f79b28d3efb4f54d75dc38e3e0c62c8fd2a0a",
+      "host": "keybase.io",
+      "kid": "01200244b5a11c6a2d1507e2aaf4cf96aac26a256a44532f82a2682b26efacb241000a",
+      "uid": "e528ef6e9fe84d436db6263f47c13119",
+      "username": "qntmpkts"
+    },
+    "merkle_root": {
+      "ctime": 1519952711,
+      "hash": "65528959ac99223efde9bf421f905d16c5042e153a0cdbf066b7a56302017b00fdd4599ca8b6e39bd93eb056d1b47b06b6aab38c7728bb69601aba5d87e3eb96",
+      "hash_meta": "d105de4add8ff798fa88a14c01067276808f31d02b05c80cbf1a57510990fc9c",
+      "seqno": 2173786
+    },
+    "service": {
+      "hostname": "qanonmap.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.41"
+  },
+  "ctime": 1519952737,
+  "expire_in": 504576000,
+  "prev": "c694e30ee5c762a88ad6a5f9691928c906c3f6453f2f55cd54ccfe2c649bc632",
+  "seqno": 103,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgAkS1oRxqLRUH4qr0z5aqwmolakRTL4KiaCsm76yyQQAKp3BheWxvYWTFA0x7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxYWJkNDQ1NjhjZDU3NzU5ZTVmOGFhMTY1ZDRhNzJmNzliMjhkM2VmYjRmNTRkNzVkYzM4ZTNlMGM2MmM4ZmQyYTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMDI0NGI1YTExYzZhMmQxNTA3ZTJhYWY0Y2Y5NmFhYzI2YTI1NmE0NDUzMmY4MmEyNjgyYjI2ZWZhY2IyNDEwMDBhIiwidWlkIjoiZTUyOGVmNmU5ZmU4NGQ0MzZkYjYyNjNmNDdjMTMxMTkiLCJ1c2VybmFtZSI6InFudG1wa3RzIn0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTE5OTUyNzExLCJoYXNoIjoiNjU1Mjg5NTlhYzk5MjIzZWZkZTliZjQyMWY5MDVkMTZjNTA0MmUxNTNhMGNkYmYwNjZiN2E1NjMwMjAxN2IwMGZkZDQ1OTljYThiNmUzOWJkOTNlYjA1NmQxYjQ3YjA2YjZhYWIzOGM3NzI4YmI2OTYwMWFiYTVkODdlM2ViOTYiLCJoYXNoX21ldGEiOiJkMTA1ZGU0YWRkOGZmNzk4ZmE4OGExNGMwMTA2NzI3NjgwOGYzMWQwMmIwNWM4MGNiZjFhNTc1MTA5OTBmYzljIiwic2Vxbm8iOjIxNzM3ODZ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoicWFub25tYXAuZ2l0aHViLmlvIiwicHJvdG9jb2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuNDEifSwiY3RpbWUiOjE1MTk5NTI3MzcsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJwcmV2IjoiYzY5NGUzMGVlNWM3NjJhODhhZDZhNWY5NjkxOTI4YzkwNmMzZjY0NTNmMmY1NWNkNTRjY2ZlMmM2NDliYzYzMiIsInNlcW5vIjoxMDMsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAnITtT2wbEISil1DsfijLzelHn9ZiX+FLK2NutxsciFKFufOJnV8N0jaLJfqTHcMHlaWC46Sai5RyzCR0Cl+eBahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBWOhXliT3CUi6n55qAn9k/0uL4FtnfaWHUqIuUJ26Oro3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/qntmpkts
+
+==================================================================
