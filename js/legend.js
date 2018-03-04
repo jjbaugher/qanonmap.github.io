@@ -63,7 +63,9 @@ const legend = {
     'HUMA': 'Harvard University Muslim Alumni',
     'HW': 'Hollywood',
     'IC': 'Intelligence Community',
+    'ICBM': 'Intercontinental ballistic missile',
     'ID': 'Identification',
+    'IG': 'Inspector General',
     'IRS': 'Internal Revenue Agency ',
     'ISIS': 'Israeli Secret Intelligence Service',
     'JA': 'Julian Assange',
@@ -130,5 +132,6 @@ const legend = {
     'WL': 'WikiLeaks',
     'WMD': 'Weapon of Mass Destruction',
     'WW': 'World War; World Wide',
-    'X': 'MX, Mexico'
+    'X': 'MX, Mexico',
+    'YT': 'YouTube'
 };
