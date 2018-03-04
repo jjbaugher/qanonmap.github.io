@@ -28,10 +28,12 @@
   <meta name="msapplication-square310x310logo" content="styles/icons/mstile-310x310.png" />
 
   <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script>
-  <script src="lib/tinycon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone-with-data.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tinycon/0.6.5/tinycon.min.js"></script>
 
   <link rel="stylesheet" href="styles/twitter.css">
-  <script src="https://platform.twitter.com/widgets.js"></script>
+  <!--<script src="https://platform.twitter.com/widgets.js"></script>-->
   <script src="lib/markdown-it.min.js"></script>
 
   <link rel="stylesheet" href="styles/core.css">
@@ -50,7 +52,8 @@
       <span id="count"></span>
     </div>
     <div class="stretch row">
-      <button onclick="checkForNewPosts()">🇺🇸</button>
+      <button onclick="checkForNewPosts()" title="Query posts">🇺🇸</button>
+      <!--<button id="timezone" title="time zone">EST</button>-->
     </div>
     <div class="stretch">
       <form id="submitChanges" class="row space" hidden>
@@ -62,8 +65,9 @@
     </div>
     <div class="row hide-mobile">
       <a href="news.html" target="_parent">
-        <button>Q related news</button>
+        <button title="Q related news">&#128240;</button>
       </a>
+      <button title="Information" onclick="toggleDialog('info')">&#128712;</button>
     </div>
   </header>
   <div class="row">
@@ -74,14 +78,28 @@
     <span id="notification" hidden></span>
   </div>
 
+  <div class="dialog" id="info">
+    <div>
+      <button onclick="toggleDialog('info')" class="close icon">X</button>
+      <p>QAnonMap is hosted on multiple mirrors for redundancy should any go down.
+        <br />Current mirrors:
+      </p>
+      <p>
+        <a href="https://qanonmap.github.io">qanonmap.github.io</a>
+        <br />
+        <a href="https://qanonmap.bitbucket.io">qanonmap.bitbucket.io</a>
+        <br />
+        <a href="https://qntmpkts.keybase.pub">qntmpkts.keybase.pub</a>
+      </p>
+    </div>
+  </div>
+
   <div class="dialog" id="story">
     <div>
       <button onclick="toggleDialog('story')" class="close icon">close</button>
       <header></header>
       <div class="container">
-
       </div>
-
     </div>
   </div>
 </body>
