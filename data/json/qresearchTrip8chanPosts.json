@@ -7096,5 +7096,49 @@
     "timestamp": 1520355227,
     "trip": "!UW.yye1fxo",
     "userId": "53851b"
+  },
+  {
+    "email": null,
+    "id": "568863",
+    "images": [],
+    "link": "https://8ch.net/qresearch/res/568699.html#568863",
+    "name": "Q",
+    "source": "8chan_qresearch",
+    "subject": null,
+    "text": "https:// wikileaks.org/clinton-emails/emailid/629\nSo much is open source.\nSo much left to be connected.\nWhy are the children in Haiti in high demand?\nHow are they smuggled out?\n‘Adoption’ process.\nLocal ‘staging’ ports friendly to CF?\nTrack donations.\nCross against location relative to Haiti.\nThink logically.\nThe choice, to KNOW, will be yours.\nQ\n",
+    "threadId": "568699",
+    "timestamp": 1520359584,
+    "trip": "!UW.yye1fxo",
+    "userId": "2362f9"
+  },
+  {
+    "email": null,
+    "id": "568909",
+    "images": [],
+    "link": "https://8ch.net/qresearch/res/568699.html#568909",
+    "name": "Q",
+    "source": "8chan_qresearch",
+    "subject": null,
+    "text": ">>568863\nhttps:// wikileaks.org/clinton-emails/emailid/3672\nWho are we taught to trust the most?\nThis will not be easy.\nThe END.\nQ\n",
+    "threadId": "568699",
+    "timestamp": 1520359824,
+    "trip": "!UW.yye1fxo",
+    "userId": "2362f9",
+    "references": [
+      {
+        "email": null,
+        "id": "568863",
+        "images": [],
+        "link": "https://8ch.net/qresearch/res/568699.html#568863",
+        "name": "Q",
+        "source": "8chan_qresearch",
+        "subject": null,
+        "text": "https:// wikileaks.org/clinton-emails/emailid/629\nSo much is open source.\nSo much left to be connected.\nWhy are the children in Haiti in high demand?\nHow are they smuggled out?\n‘Adoption’ process.\nLocal ‘staging’ ports friendly to CF?\nTrack donations.\nCross against location relative to Haiti.\nThink logically.\nThe choice, to KNOW, will be yours.\nQ\n",
+        "threadId": "568699",
+        "timestamp": 1520359584,
+        "trip": "!UW.yye1fxo",
+        "userId": "2362f9"
+      }
+    ]
   }
 ]
