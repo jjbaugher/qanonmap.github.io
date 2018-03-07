@@ -621,4 +621,19 @@ function updateEditStory(story) {
         .length;
 }
 
-document.addEventListener('DOMContentLoaded', main, false);
+function reversePosts() {
+    postsosts = posts.reverse(),
+    postOrder.push(...posts.map(D => D.id).reverse()),
+    render(posts),
+    this.textContent = '\u2191' === this.textContent
+        ? '\u2193'
+        : '\u2191'
+}
+
+document
+    .addEventListener('DOMContentLoaded', function () {
+        main();
+        document
+            .querySelector('#order')
+            .onclick = reversePosts
+    }, false);
