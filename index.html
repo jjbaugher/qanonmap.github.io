@@ -53,21 +53,19 @@
     </div>
     <div class="stretch row">
       <button onclick="checkForNewPosts()" title="Query posts">🇺🇸</button>
+
+      <div class="round" title="Query posts option">
+        <input type="checkbox" name="autoCheckPosts" id="autoCheckPosts" checked="checked" onchange="checkForNewPosts()" />
+        <label for="autoCheckPosts"></label>
+      </div>
+
       <!--<button id="timezone" title="time zone">EST</button>-->
     </div>
-    <div class="stretch">
-      <form id="submitChanges" class="row space" hidden>
-        <span id="editSummary">
-          <strong></strong> change</span>
-        <input type="text" name="accessCode" placeholder="access token">
-        <button type="submit">Submit</button>
-      </form>
-    </div>
     <div class="row hide-mobile">
-      <button id="order" title="order">↑</button>
       <a href="news.html" target="_parent">
         <button title="Q related news">&#128240;</button>
       </a>
+      <button id="order" title="Reorder posts">↑</button>
       <button title="Information" onclick="toggleDialog('info')">&#128712;</button>
     </div>
   </header>
@@ -82,8 +80,10 @@
   <div class="dialog" id="info">
     <div>
       <button onclick="toggleDialog('info')" class="close icon">X</button>
-      <p>QAnonMap is hosted on multiple mirrors for redundancy should any go down.
-        <br />Current mirrors:
+      <p>QAnonMap is hosted at multiple locations
+        <br />for redundancy should any go down.
+        <br />
+        <br />Current locations:
       </p>
       <p>
         <a href="https://qanonmap.github.io">qanonmap.github.io</a>
@@ -104,5 +104,9 @@
     </div>
   </div>
 </body>
+
+<!--  Note: qanonmap has never subjected users to ads of any kind, as
+      this has been considered fundamentally unethical as it
+      unnecessarily subjects users to unwarranted risks. -->
 
 </html>

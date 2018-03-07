@@ -371,58 +371,62 @@ function addHighlights(text) {
 // PARSE 8chan
 
 function checkForNewPosts() {
-    clearTimeout(timerId)
-    const boards = ['greatawakening', 'qresearch'];
-    notify(`Searching for new posts`);
+    if (document.getElementById("autoCheckPosts").checked) {
+        clearTimeout(timerId)
+        const boards = ['greatawakening', 'qresearch'];
+        notify(`Searching for new posts`);
 
-    for (const board of boards) {
+        for (const board of boards) {
 
-        const alreadyParsedIds = Array
-            .from(new Set(posts.filter(p => !p.isNew && p.source == `8chan_${board}`)))
-            .map(p => parseInt(p.threadId));
+            const alreadyParsedIds = Array
+                .from(new Set(posts.filter(p => !p.isNew && p.source == `8chan_${board}`)))
+                .map(p => parseInt(p.threadId));
 
-        const alreadyParsedPosts = Array
-            .from(new Set(posts.filter(p => !p.isNew && p.id && p.source == `8chan_${board}`)))
-            .map(p => parseInt(p.id));
+            const alreadyParsedPosts = Array
+                .from(new Set(posts.filter(p => !p.isNew && p.id && p.source == `8chan_${board}`)))
+                .map(p => parseInt(p.id));
 
-        const alreadyCheckedPosts = Array
-            .from(new Set(posts.filter(p => p.isNew && p.source == `8chan_${board}`)))
-            .map(p => parseInt(p.id));
+            const alreadyCheckedPosts = Array
+                .from(new Set(posts.filter(p => p.isNew && p.source == `8chan_${board}`)))
+                .map(p => parseInt(p.id));
 
-        const catalogUrl = `https://8ch.net/${board}/catalog.json`;
+            const catalogUrl = `https://8ch.net/${board}/catalog.json`;
 
-        getJson(catalogUrl).then(response => {
-            const threads = response.reduce((p, e) => p.concat(e.threads), []).slice(0, 25);
-            const threadIds = threads.map((p) => p.no);
-            var newThreadIds = []
-            if (threadIds.length == 1) {
-                // console.log(threadIds); //
-                newThreadIds = threadIds;
-            } else {
-                newThreadIds = threadIds.filter((id) => !alreadyParsedIds.includes(id));
-            }
-            console.log(`[${board}] Already parsed threads: ${alreadyParsedIds}`);
-            console.log(`[${board}] Already parsed posts: ${alreadyParsedPosts}`);
-            console.log(`[${board}] Already checked posts: ${alreadyCheckedPosts}`);
-            console.log(`[${board}] New threads: ${newThreadIds}`);
+            getJson(catalogUrl).then(response => {
+                const threads = response.reduce((p, e) => p.concat(e.threads), []).slice(0, 25);
+                const threadIds = threads.map((p) => p.no);
+                var newThreadIds = []
+                if (threadIds.length == 1) {
+                    // console.log(threadIds); //
+                    newThreadIds = threadIds;
+                } else {
+                    newThreadIds = threadIds.filter((id) => !alreadyParsedIds.includes(id));
+                }
+                console.log(`[${board}] Already parsed threads: ${alreadyParsedIds}`);
+                console.log(`[${board}] Already parsed posts: ${alreadyParsedPosts}`);
+                console.log(`[${board}] Already checked posts: ${alreadyCheckedPosts}`);
+                console.log(`[${board}] New threads: ${newThreadIds}`);
 
-            Promise
-                .all(newThreadIds.map(thread => getLiveTripPostsByThread(qTrip, alreadyCheckedPosts, alreadyParsedPosts, thread, board)))
-                .then(result => {
-                    const newPosts = result.reduce((p, e) => p.concat(e), []);
-                    notify(`Found ${newPosts.length} new posts on ${board}`);
+                Promise
+                    .all(newThreadIds.map(thread => getLiveTripPostsByThread(qTrip, alreadyCheckedPosts, alreadyParsedPosts, thread, board)))
+                    .then(result => {
+                        const newPosts = result.reduce((p, e) => p.concat(e), []);
+                        notify(`Found ${newPosts.length} new posts on ${board}`);
 
-                    newPosts.sort((a, b) => b['timestamp'] - a['timestamp']);
-                    posts.unshift(...newPosts);
-                    postOrder.push(...(newPosts.map(p => (p.timestamp).toString()).reverse()));
-                    render(posts);
-                    notify(null);
-                });
-        });
+                        newPosts.sort((a, b) => b['timestamp'] - a['timestamp']);
+                        posts.unshift(...newPosts);
+                        postOrder.push(...(newPosts.map(p => (p.timestamp).toString()).reverse()));
+                        render(posts);
+                        notify(null);
+                    });
+            });
+        }
+
+        var timerId = setTimeout(checkForNewPosts, 900000);
+    } else {
+        notify(`Autocheck posts disabled.`);
+        setTimeout(notify(null), 5000);
     }
-
-    var timerId = setTimeout(checkForNewPosts, 900000);
-
 }
 
 function getLiveTripPostsByThread(trip, postparsed, preparsed, thread, board) {
