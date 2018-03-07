@@ -7507,5 +7507,51 @@
     "timestamp": 1520456336,
     "trip": "!UW.yye1fxo",
     "userId": "4776ee"
+  },
+  {
+    "email": null,
+    "id": "580431",
+    "images": [],
+    "link": "https://8ch.net/qresearch/res/579816.html#580431",
+    "name": "Q",
+    "source": "8chan_qresearch",
+    "subject": null,
+    "text": ">>580412\nThe FATHER is who?\nQ\n",
+    "threadId": "579816",
+    "timestamp": 1520456581,
+    "trip": "!UW.yye1fxo",
+    "userId": "4776ee",
+    "references": [
+      {
+        "email": null,
+        "id": "580412",
+        "images": [],
+        "link": "https://8ch.net/qresearch/res/579816.html#580412",
+        "name": "Anonymous",
+        "source": "8chan_qresearch",
+        "subject": null,
+        "text": ">>580366\n\nSnowden's girlfriend performs in a circus.\nAlso, John Le Carre's George Smiley worked out of \"The Circus.\"\n",
+        "threadId": "579816",
+        "timestamp": 1520456523,
+        "trip": null,
+        "userId": "18071f",
+        "references": [
+          {
+            "email": null,
+            "id": "580366",
+            "images": [],
+            "link": "https://8ch.net/qresearch/res/579816.html#580366",
+            "name": "Q",
+            "source": "8chan_qresearch",
+            "subject": null,
+            "text": "Who controls social media?\nWho performs in a circus?\nWho wrote the code to embed and censor across multiple platforms?\nWhy Russia?\nWhy China?\nWhy HK?\nWhy did ES (himself) arrange a C-link in multiple countries? \nLearn.\nQ\n",
+            "threadId": "579816",
+            "timestamp": 1520456336,
+            "trip": "!UW.yye1fxo",
+            "userId": "4776ee"
+          }
+        ]
+      }
+    ]
   }
 ]
