@@ -98,6 +98,7 @@ const legend = {
     'OCMC': 'Overhead Collection Management Center',
     'OO': 'Oval Office',
     'OP': 'Original Poster; Operation',
+    'OS': 'Oversight',
     'PEOC': 'Presidential Emergency Operations Center',
     'PG': 'PizzaGate; PedoGate',
     'PM': 'Prime Minister',
