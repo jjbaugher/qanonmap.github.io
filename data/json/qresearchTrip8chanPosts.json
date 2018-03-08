@@ -7634,5 +7634,65 @@
     "timestamp": 1520547932,
     "trip": "!UW.yye1fxo",
     "userId": "2f9ca6"
+  },
+  {
+    "email": null,
+    "id": "592689",
+    "images": [],
+    "link": "https://8ch.net/qresearch/res/592516.html#592689",
+    "name": "Q",
+    "source": "8chan_qresearch",
+    "subject": null,
+    "text": "Do you believe in coincidences?\nhttp:// ytcropper.com/cropped/We5aa1b3278dd0a\nQ\n",
+    "threadId": "592516",
+    "timestamp": 1520552765,
+    "trip": "!UW.yye1fxo",
+    "userId": "8744ac"
+  },
+  {
+    "email": null,
+    "id": "592721",
+    "images": [],
+    "link": "https://8ch.net/qresearch/res/592516.html#592721",
+    "name": "Q",
+    "source": "8chan_qresearch",
+    "subject": null,
+    "text": ">>592712\n",
+    "threadId": "592516",
+    "timestamp": 1520552892,
+    "trip": "!UW.yye1fxo",
+    "userId": "8744ac",
+    "references": [
+      {
+        "email": null,
+        "id": "592712",
+        "images": [],
+        "link": "https://8ch.net/qresearch/res/592516.html#592712",
+        "name": "Anonymous",
+        "source": "8chan_qresearch",
+        "subject": null,
+        "text": ">>592689\n\n\nQ HAND GESTURE WAT\n",
+        "threadId": "592516",
+        "timestamp": 1520552878,
+        "trip": null,
+        "userId": "78e14e",
+        "references": [
+          {
+            "email": null,
+            "id": "592689",
+            "images": [],
+            "link": "https://8ch.net/qresearch/res/592516.html#592689",
+            "name": "Q",
+            "source": "8chan_qresearch",
+            "subject": null,
+            "text": "Do you believe in coincidences?\nhttp:// ytcropper.com/cropped/We5aa1b3278dd0a\nQ\n",
+            "threadId": "592516",
+            "timestamp": 1520552765,
+            "trip": "!UW.yye1fxo",
+            "userId": "8744ac"
+          }
+        ]
+      }
+    ]
   }
 ]
