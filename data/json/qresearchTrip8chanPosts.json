@@ -7770,5 +7770,67 @@
         "userId": "19bdf7"
       }
     ]
+  },
+  {
+    "email": null,
+    "id": "593033",
+    "images": [],
+    "link": "https://8ch.net/qresearch/res/592516.html#593033",
+    "name": "Q",
+    "source": "8chan_qresearch",
+    "subject": null,
+    "text": ">>592934\nEverything has meaning.\nThis is not a game.\nLearn to play the game.\nQ\n",
+    "threadId": "592516",
+    "timestamp": 1520553880,
+    "trip": "!UW.yye1fxo",
+    "userId": "8744ac",
+    "references": [
+      {
+        "email": null,
+        "id": "592934",
+        "images": [],
+        "link": "https://8ch.net/qresearch/res/592516.html#592934",
+        "name": "Anonymous",
+        "source": "8chan_qresearch",
+        "subject": null,
+        "text": ">>592913\nBEST GAME EVER BOSS!!!\n> TV Time!!!\n",
+        "threadId": "592516",
+        "timestamp": 1520553617,
+        "trip": null,
+        "userId": "477eae",
+        "references": [
+          {
+            "email": null,
+            "id": "592913",
+            "images": [],
+            "link": "https://8ch.net/qresearch/res/592516.html#592913",
+            "name": "Q",
+            "source": "8chan_qresearch",
+            "subject": null,
+            "text": ">>592845\nNO DEALS!\nWe work for you.\nWe listen to you.\nYou pushed the IBOR and immediately POTUS began to comment/take action re: social media.\nPLAY THE GAME WITH US.\nQ\n",
+            "threadId": "592516",
+            "timestamp": 1520553567,
+            "trip": "!UW.yye1fxo",
+            "userId": "8744ac",
+            "references": [
+              {
+                "email": null,
+                "id": "592845",
+                "images": [],
+                "link": "https://8ch.net/qresearch/res/592516.html#592845",
+                "name": "Anonymous",
+                "source": "8chan_qresearch",
+                "subject": null,
+                "text": "Q, please tell us it's still NO DEALS! \nAnd that this people will face JUSTICE!! Please just say YES. They will. I pray so hard every night!\n",
+                "threadId": "592516",
+                "timestamp": 1520553362,
+                "trip": null,
+                "userId": "19bdf7"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
