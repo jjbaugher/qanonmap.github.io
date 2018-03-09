@@ -7943,5 +7943,49 @@
         ]
       }
     ]
+  },
+  {
+    "email": null,
+    "id": "594145",
+    "images": [],
+    "link": "https://8ch.net/qresearch/res/594083.html#594145",
+    "name": "Q",
+    "source": "8chan_qresearch",
+    "subject": null,
+    "text": "Think FORBIDDEN CITY.\nPOTUS never crossed the line (ground).\nDo not glorify us. \nWe work for you.\nPromises made.\nPromises kept.\nQ\n",
+    "threadId": "594083",
+    "timestamp": 1520557351,
+    "trip": "!UW.yye1fxo",
+    "userId": "3d632d"
+  },
+  {
+    "email": null,
+    "id": "594193",
+    "images": [],
+    "link": "https://8ch.net/qresearch/res/594083.html#594193",
+    "name": "Q",
+    "source": "8chan_qresearch",
+    "subject": null,
+    "text": ">>594151\nResolved by 11-11.\nQ\n",
+    "threadId": "594083",
+    "timestamp": 1520557503,
+    "trip": "!UW.yye1fxo",
+    "userId": "3d632d",
+    "references": [
+      {
+        "email": null,
+        "id": "594151",
+        "images": [],
+        "link": "https://8ch.net/qresearch/res/594083.html#594151",
+        "name": "Anonymous",
+        "source": "8chan_qresearch",
+        "subject": null,
+        "text": ">>594016\n>Iran next.\n\n\nA tougher nut to crack, Q-Team.\n\nI hope your negotiations with Mahmoud are going well.\n",
+        "threadId": "594083",
+        "timestamp": 1520557382,
+        "trip": null,
+        "userId": "dc7a36"
+      }
+    ]
   }
 ]
