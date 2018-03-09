@@ -7694,5 +7694,51 @@
         ]
       }
     ]
+  },
+  {
+    "email": null,
+    "id": "592798",
+    "images": [],
+    "link": "https://8ch.net/qresearch/res/592516.html#592798",
+    "name": "Q",
+    "source": "8chan_qresearch",
+    "subject": null,
+    "text": ">>592731\n+ deliberate performance issues to impact military / infrastructure. \nWe were sold out.\nYou have so much more than you know.\nQ\n",
+    "threadId": "592516",
+    "timestamp": 1520553174,
+    "trip": "!UW.yye1fxo",
+    "userId": "8744ac",
+    "references": [
+      {
+        "email": null,
+        "id": "592731",
+        "images": [],
+        "link": "https://8ch.net/qresearch/res/592516.html#592731",
+        "name": "Anonymous",
+        "source": "8chan_qresearch",
+        "subject": null,
+        "text": ">>592689\n\nWas necessary. China produces 10x as much steel as US. What if war breaks out? \n\nMatter of national security, geopolitics …to prevent war, peace trough strength.\n",
+        "threadId": "592516",
+        "timestamp": 1520552914,
+        "trip": null,
+        "userId": "83f0b1",
+        "references": [
+          {
+            "email": null,
+            "id": "592689",
+            "images": [],
+            "link": "https://8ch.net/qresearch/res/592516.html#592689",
+            "name": "Q",
+            "source": "8chan_qresearch",
+            "subject": null,
+            "text": "Do you believe in coincidences?\nhttp:// ytcropper.com/cropped/We5aa1b3278dd0a\nQ\n",
+            "threadId": "592516",
+            "timestamp": 1520552765,
+            "trip": "!UW.yye1fxo",
+            "userId": "8744ac"
+          }
+        ]
+      }
+    ]
   }
 ]
