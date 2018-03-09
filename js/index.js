@@ -10,9 +10,6 @@ let newcount = 0;
 const md = window.markdownit();
 const isEditing = () => location.hash === '#edit';
 const edits = {};
-const serverUrl = debug
-    ? 'http://localhost:8080'
-    : 'http://145.249.106.38';
 
 function main() {
 
