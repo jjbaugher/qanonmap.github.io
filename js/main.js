@@ -173,8 +173,8 @@ const legend = {
     'EM': 'Elon Musk',
     'EMP': 'Electromagnetic Pulse',
     'EMS': 'Emergency Medical Services',
-    'EO': 'Executive;der',
-    'ES': 'Eric Schmidt',
+    'EO': 'Executive Order',
+    'ES': 'Edward Snowden; Eric Schmidt',
     'EU': 'European Union',
     'F-I': 'Federal Bureau of Investigation',
     'F&F': 'Fox & Friends',
@@ -191,10 +191,12 @@ const legend = {
     'HA': 'Huma Abedin',
     'HEC': 'United States House Committee on Ethics',
     'HI': 'Hawaii',
+    'HK': 'Hong Kong',
     'HRC': 'Hillary Rodham Clinton',
     'HS': 'Homeland Security',
     'HUMA': 'Harvard University Muslim Alumni',
     'HW': 'Hollywood',
+    'IBOR': 'Internet Bill of Rights',
     'IC': 'Intelligence Community',
     'ICBM': 'Intercontinental ballistic missile',
     'ID': 'Identification',
@@ -241,6 +243,7 @@ const legend = {
     'R\'s': 'Republicans',
     'RNC': 'Republican National Committee',
     'RR': 'Rod Rosenstein, Deputy Attorney General',
+    'RT': 'Real Time',
     'SA': 'Saudi Arabia',
     'SAP': 'Special Access Programs',
     'SC': 'Supreme Court',
@@ -265,6 +268,7 @@ const legend = {
     'USSS': 'United States Secret Service',
     'VJ': 'Valerie Jarret, Former Senior Advisor to the President',
     'WH': 'White House',
+    'WHO': 'The sound an owl makes',
     'WL': 'WikiLeaks',
     'WMD': 'Weapon of Mass Destruction',
     'WW': 'World War; World Wide',
@@ -274,9 +278,7 @@ const legend = {
 
 let posts = [];
 let stories = {};
-let editor;
 let answers = {};
-let editedAnswers = {};
 let postOrder = [];
 // !UW.yye1fxo has not been compromised at this time
 let qTrip = '!UW.yye1fxo';
