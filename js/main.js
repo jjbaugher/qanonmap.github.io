@@ -133,6 +133,7 @@ const setParams = params => {
 
 const legend = {
     '187': 'Murder (police code)',
+    '\@Snowden': 'Edward Snowden',
     '\#2': 'Andrew McCabe, Former FBI Deputy Director',
     'Adm R': 'Admiral Michael S. Rogers, Director of the NSA',
     'AF1': 'Air Force 1, POTUS plane',
@@ -174,7 +175,7 @@ const legend = {
     'EMP': 'Electromagnetic Pulse',
     'EMS': 'Emergency Medical Services',
     'EO': 'Executive Order',
-    'ES': 'Edward Snowden; Eric Schmidt',
+    'ES': 'Eric Schmidt',
     'EU': 'European Union',
     'F-I': 'Federal Bureau of Investigation',
     'F&F': 'Fox & Friends',
@@ -229,7 +230,7 @@ const legend = {
     'NK': 'North Korea, also NORK, NOK, NOKO',
     'NP': 'Non-Profit',
     'NSA': 'National Security Agency',
-    'NWO': 'New World;der',
+    'NWO': '[Not "New"] World Order', // per Q #617965 & #618754
     'OCMC': 'Overhead Collection Management Center',
     'OO': 'Oval Office',
     'OP': 'Original Poster; Operation',
