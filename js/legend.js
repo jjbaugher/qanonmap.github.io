@@ -97,7 +97,7 @@ const legend = {
     'NK': 'North Korea, also NORK, NOK, NOKO',
     'NP': 'Non-Profit',
     'NSA': 'National Security Agency',
-    'NWO': '[Not "New"] World Order', // per Q #617965 & #618754
+    'NWO': '[Not `New`] World Order', // per Q #617965 & #618754
     'OCMC': 'Overhead Collection Management Center',
     'OO': 'Oval Office',
     'OP': 'Original Poster; Operation',
